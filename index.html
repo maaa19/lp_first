@@ -4,43 +4,50 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="styles/css/bootstrap.css">
+    <link rel="stylesheet" href="styles/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/css/style.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
   </head>
   <body>
     <header class="l-header">
-      <div class="l-headerPc l-content row justify-content-between align-items-center">
-        <div class="l-headerPc__logo">
-          <img class="l-headerPc__logoImg" src="images/conecre_logo.png" alt="コネクリ">
-        </div>
-        <div class="l-headerPc__menu">
-          <ul class="l-headerPc__menuList row justify-content-between align-items-center">
-            <li class="l-headerPc__menuItem"><a class="l-headerPc__menuLink" href="#">コネクリとは</a></li>
-            <li class="l-headerPc__menuItem"><a class="l-headerPc__menuLink" href="#">スポットワーク</a></li>
-            <li class="l-headerPc__menuItem"><a class="l-headerPc__menuLink" href="#">レギュラーワーク</a></li>
-            <li class="l-headerPc__menuItem"><a class="l-headerPc__menuLink" href="#">リクルート</a></li>
-            <li class="l-headerPc__menuItem"><a class="l-headerPc__menuLink" href="#">お問い合わせ</a></li>
-            <li class="l-headerPc__menuItem--download"><a class="l-headerPc__menuLink--download" href="#">ダウンロード</a></li>
-          </ul>
+      <div class="">
+        <div class="l-headerPc l-content">
+          <div class=" row justify-content-between align-items-center">
+            <div class="l-headerPc__logo">
+              <img class="l-headerPc__logoImg" src="images/conecre_logo.png" alt="コネクリ">
+            </div>
+            <div class="l-headerPc__menu">
+              <ul class="l-headerPc__menuList row justify-content-right align-items-center">
+                <li class="l-headerPc__menuItem"><a class="l-headerPc__menuLink" href="#">コネクリとは</a></li>
+                <li class="l-headerPc__menuItem"><a class="l-headerPc__menuLink" href="#">スポットワーク</a></li>
+                <li class="l-headerPc__menuItem"><a class="l-headerPc__menuLink" href="#">レギュラーワーク</a></li>
+                <li class="l-headerPc__menuItem"><a class="l-headerPc__menuLink" href="#">リクルート</a></li>
+                <li class="l-headerPc__menuItem"><a class="l-headerPc__menuLink" href="#">お問い合わせ</a></li>
+                <li class="l-headerPc__menuItem--download"><a class="l-headerPc__menuLink--download" href="#">ダウンロード</a></li>
+              </ul>
+            </div>
+          </div>
+
         </div>
       </div>
+
       <div class="l-headerMobile">
 
       </div>
     </header>
-    <main>
-      <section>
-        <div class="l-bg--top">
-          <div class="l-content">
-            <div class="p-top__left l-content--half">
-              <p class="p-top__slogan">企業とつながる学生専用アプリ</p>
-              <div class="p-top__logo">
-                <img class="p-top__logoImg" src="images/conecre_logo.png" alt="">
-              </div>
-              <div class="p-top__download row justify-content-between">
-                  <a href="#"><img class="c-btn--download c-btn--downloadGoogle" src="images/download_googleplay.svg" alt=""></a>
-                  <a href="#"><img class="c-btn--download c-btn--downloadApp" src="images/download_appstore.svg" alt=""></a>
-              </div>
+    <main class="l-main">
+      <section class="l-bg--top">
+        <div class="l-content">
+          <div class="p-top__left l-content--half">
+            <p class="p-top__slogan">企業とつながる学生専用アプリ</p>
+            <div class="p-top__logo">
+              <img class="p-top__logoImg" src="images/conecre_logo.png" alt="">
+            </div>
+            <div class="p-top__download row justify-content-between">
+                <a class="c-btn--download" href="#"><img src="images/download_googleplay.svg" alt=""></a>
+                <a class="c-btn--download" href="#"><img src="images/download_appstore.svg" alt=""></a>
+            </div>
+            <div class="p-top__label">
               <div class="c-label">
                 <img class="c-labelImg" src="images/label_free.png" alt="">
                 <p class="c-labelText">完全無料</p>
@@ -49,7 +56,7 @@
           </div>
         </div>
       </section>
-      <section class="l-bg--overview l-content--sectionMd">
+      <section class="l-bg--overview l-content--section">
         <div class="l-content">
           <div class="row justify-content-center align-items-end">
             <div class="p-overview__top">
@@ -85,41 +92,109 @@
             <div class="p-overview__bottom">
               <img class="p-overview__starImg" src="images/star-small_02.png" alt="">
             </div>
+            <i class="fa fa-angle-double-down" aria-hidden="true"></i>
           </div>
         </div>
       </section>
       <section class="l-bg--feature">
-
+        <div class="l-content l-content--section">
+          <div class="c-label c-label--feature">
+            <img class="c-labelImg" src="images/label_free.png" alt="">
+            <p class="c-labelText c-label--featureText">コネクリの特徴</p>
+          </div>
+          <div class="p-feature">
+            <div class=" row justify-content-between">
+              <div class="p-featureItem">
+                <img class="p-feature__img" src="images/feature_spot.png" alt="">
+                <div class="p-feature__point">
+                  <h2 class="c-title c-title--md">スポットワーク</h2>
+                  <p class="p-feature__pointDesc">企業の依頼に協力をして<br>報酬を貰えます。</p>
+                  <div class="p-feature__btnToBottom p-feature__btnToSpot">
+                    <i class="c-btn fa fa-angle-down fa-4x " aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="p-featureItem">
+                <img class="p-feature__img" src="images/feature_regular.png" alt="">
+                <div class="p-feature__point">
+                  <h2 class="c-title c-title--md">レギュラーワーク</h2>
+                  <p class="p-feature__pointDesc">インターンシップや<br>アルバイトを探せます。</p>
+                  <div class="p-feature__btnToBottom p-feature__btnToRegular">
+                    <button class="c-btn c-btn--feature"></button>
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="p-featureItem">
+                <img class="p-feature__img" src="images/feature_recruit.png" alt="">
+                <div class="p-feature__point">
+                  <h2 class="c-title c-title--md">リクルート</h2>
+                  <p class="p-feature__pointDesc">自分の目指す就職先を<br>探す事ができます</p>
+                  <div class="p-feature__btnToBottom p-feature__btnToRecruit">
+                    <button class="c-btn c-btn--feature"></button>
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
-      <section class="l-bg--spot">
+      <section class="row">
+        <div class="l-bg--spot l-bg--spotLeft">
+            <div class="p-spot">
+              <div class="p-spot__top">
+                <div class="c-label c-label--small">
+                  <img class="c-labelImg" src="images/label_smallTitle.png" alt="">
+                  <p class="c-labelText c-label--smallText">スポットワーク</p>
+                </div>
+                <p class="p-spot__outline">学生が企業の依頼に協力したり、<br>提案したり、今までにない<br>新しいワークスタイル</p>
+              </div>
+              <p class="p-spot__detail">企業の依頼に協力して報酬を貰います。<br>例えばSNSで情報拡散、アンケートの協力、イベントの参加など、<br>
+                さまざまな形で企業と接することができます。<br>学生から企業に対して提案することが出来ますので<br>
+                学生団体やサークルの仲間で協力して活動費を稼ぐことも出来ます。
+              </p>
+            </div>
+          </div>
+
+        </div>
+        <div class="l-bg--spot l-bg--spotRight">
+        </div>
 
       </section>
       <section class="l-bg--spotDetail">
-
+        スポーートワークの詳細
       </section>
       <section class="l-bg--regular">
 
       </section>
       <section class="l-bg--regularDetail">
+        レギュラーワーク詳細
 
       </section>
       <section class="l-bg--recruit">
+        リクルートトップ
 
       </section>
       <section class="l-bg--recruitDetail">
+        リクルート詳細s
 
       </section>
       <section class="l-bg--userStudent">
+        利用者（学生）
 
       </section>
       <section class="l-bg--userGroup">
+        利用者（団体）
 
       </section>
       <section class="l-bg--bottom">
+        さいご
 
       </section>
     </main>
     <footer>
+      フッター
       <div class="">
 
       </div>
