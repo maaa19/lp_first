@@ -233,7 +233,9 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     position: absolute;
     top: -18%;
     left: 16%;
-    font-weight: normal; }
+    font-weight: normal;
+    color: #666;
+    padding: 0 10px; }
 
 .p-top__left {
   width: 50%;
@@ -297,11 +299,21 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   padding: 80px 0;
   text-align: left;
   position: absolute;
-  right: 0;
   width: 490px; }
+  .p-serviceTop--left {
+    right: 0; }
+  .p-serviceTop--right {
+    left: 0; }
   .p-serviceTop__outline {
     margin-top: 30px;
     font-size: 2.8rem; }
+.p-serviceDetail {
+  margin: 100px auto 0;
+  width: 770px; }
+  .p-serviceDetailImg {
+    width: 320px; }
+  .p-serviceDetailText {
+    margin-top: 30px; }
 
 .p-spot__aboutImg {
   width: 250px;
@@ -358,5 +370,42 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
       font-size: 1.8rem; }
     .p-spot__usageFlowArrow {
       color: #fce409; }
+
+.p-userStudent {
+  margin-top: 50px; }
+  .p-userStudent__left {
+    margin-left: 80px; }
+    .p-userStudent__leftText {
+      font-size: 1.6rem;
+      margin-top: 60px;
+      text-align: left; }
+  .p-userStudent__studentsImg {
+    width: 500px;
+    margin-top: 25px; }
+  .p-userStudent__right {
+    margin-right: 100px; }
+  .p-userStudent__graphImg {
+    width: 240px;
+    margin-top: 20px; }
+.p-userGroup {
+  padding: 20px 0 50px; }
+  .p-userGroup__topImg {
+    width: 50px; }
+  .p-userGroup__topText {
+    font-size: 2.4rem;
+    color: #fce409;
+    padding: 0 20px; }
+  .p-userGroup__groupInfo {
+    margin-top: 35px; }
+  .p-userGroup__groupImg {
+    width: 120px; }
+  .p-userGroup__groupName {
+    color: #fff; }
+    .p-userGroup__groupNameLarge {
+      font-size: 2.2rem;
+      font-weight: bold; }
+  .p-userGroup__list {
+    width: 770px;
+    margin: 40px auto 0; }
 
 /*# sourceMappingURL=style.css.map */
