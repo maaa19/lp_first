@@ -1,4 +1,20 @@
 .l-bg
+  width: 50%
+  height: 550px
+  repeat: no-repeat
+  &--left
+    position: relative
+    background:
+      // color: #fbfbfb
+      position: left top
+
+  &--right
+    position: absolute
+    right: 0
+    background:
+      // color: #fbfbfb
+      position: center top
+
   &--top
     width: 100%
     height: 540px
@@ -8,70 +24,31 @@
       position: center top
       repeat: no-repeat
 
-  &--overview
+  &--overview, &--userGroup
     background-color: #5ed9db
+
+  &--feature, &--userStudent
+    background-color: #fff
+
+  &--serviceDetail
+    background-color: #f9f8f3
+
+  &--theme
+    background:
+      image: url("../../images/theme_bg.png")
+      repeat: repeat none
 
   &--spot
-    width: 50%
-    height: 550px
-    &Left
-      position: relative
-      background:
-        // color: #fbfbfb
-        image: url("../../images/theme_bg.png")
-        position: left top
-        repeat: repeat none
-    &Right
-      position: absolute
-      right: 0
-      background:
-        // color: #fbfbfb
-        image: url("../../images/spot_bg.jpg")
-        position: center top
-        repeat: no-repeat
-    &Detail
-      background-color: #f9f8f3
+    background:
+      image: url("../../images/spot_bg.jpg")
 
   &--regular
-    width: 50%
-    height: 550px
-    &Left
-      background:
-        // color: #fbfbfb
-        image: url("../../images/regular_bg.jpg")
-        position: right top
-        repeat: no-repeat
-    &Right
-      background:
-        // color: #fbfbfb
-        image: url("../../images/theme_bg.png")
-        position: left top
-        repeat: repeat none
-    &Detail
-      background-color: #f9f8f3
-
+    background:
+      image: url("../../images/regular_bg.jpg")
 
   &--recruit
-    width: 50%
-    height: 550px
-    &Left
-      background:
-        // color: #fbfbfb
-        image: url("../../images/theme_bg.png")
-        position: left top
-        repeat: repeat none
-    &Right
-      background:
-        // color: #fbfbfb
-        image: url("../../images/recruit_bg.jpg")
-        position: right top
-        repeat: no-repeat
-
-    &Detail
-      background-color: #f9f8f3
-
-  &--userGroup
-    background-color: #5ed9db
+    background:
+      image: url("../../images/recruit_bg.jpg")
 
   &--bottom
     width: 100%
