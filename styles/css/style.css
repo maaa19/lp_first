@@ -198,25 +198,20 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   margin-top: 30px; }
 
 .c-label {
-  width: 300px;
-  height: 50px;
-  position: relative; }
+  width: 300px; }
   .c-labelImg {
-    width: 100%;
-    position: absolute; }
-  .c-labelText {
-    color: #000;
-    font-size: 22px;
-    position: absolute; }
-  .c-label--featureText {
-    color: #666;
-    font-size: 2.6rem; }
-  .c-label--small {
-    width: 160px;
-    height: 30px; }
-    .c-label--smallText {
-      font-size: 1.6rem;
-      line-height: 30px; }
+    width: 100%; }
+  .c-label--service {
+    width: 160px; }
+  .c-label--spotUsageImg {
+    position: absolute;
+    width: 500px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: -26px; }
+  .c-label--userStudent {
+    width: 420px; }
 
 .c-title--md {
   font-size: 2.4rem;
@@ -258,9 +253,13 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   .p-top__logoImg {
     width: 100%; }
 .p-top__download {
-  margin: 0 90px; }
+  width: 300px;
+  margin: 0 auto; }
 .p-top__label {
-  margin-top: 30px; }
+  width: 300px;
+  margin: 30px auto 0; }
+  .p-top__labelImg {
+    width: 300px; }
 
 .p-overview__topText {
   color: #fff;
@@ -289,18 +288,18 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 .p-overview__arrowDown {
   color: #fce409; }
 
-.p-feature {
+.p-feature__itemList {
   margin-top: 30px;
   padding: 0 112px; }
-  .p-feature__img {
-    width: 160px; }
-  .p-feature__point {
-    margin-top: 50px; }
-    .p-feature__pointDesc {
-      margin-top: 10px; }
-  .p-feature__btnToBottom {
-    margin-top: 20px;
-    color: #0cb4b7; }
+.p-feature__img {
+  width: 160px; }
+.p-feature__point {
+  margin-top: 50px; }
+  .p-feature__pointDesc {
+    margin-top: 10px; }
+.p-feature__btnToBottom {
+  margin-top: 20px;
+  color: #0cb4b7; }
 
 .p-serviceTop {
   color: #fff;
@@ -344,7 +343,8 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   margin: 80px 40px 0;
   border: solid 2px #fce409;
   padding: 20px 80px 30px 80px;
-  background-color: #fff; }
+  background-color: #fff;
+  position: relative; }
   .p-spot__usageUserImg {
     width: 70px;
     margin-top: 20px; }
