@@ -5,10 +5,27 @@
     text-align: left
     position: absolute
     width: 490px
+    height: 100%
     &--left
-      right: 0
-    &--right
       left: 0
+    &--right
+      right: 0
+
+    &__box
+      height: 410px
+      position: absolute
+      right: 0
+      display: -webkit-box  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+      display: -ms-flexbox  /* TWEENER - IE 10 */
+      display: -webkit-flex /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+      display: flex         /* NEW, Spec - Firefox, Chrome, Opera */
+      justify-content: space-between
+      flex-direction: column
+      &--left
+        left: 0
+      &--right
+        right: 0
+
     &__outline
       margin-top: 30px
       font-size: 2.8rem

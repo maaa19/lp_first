@@ -8,6 +8,9 @@
         color: $subColor
         font-size: 3.4rem
         font-weight: bold
+      &Mobile
+        display: none
+
   &__strong
     &Img
       width: 120px
@@ -34,3 +37,24 @@
 
   &__arrowDown
     color: $subColor
+
+@media (max-width: $breakpointMobile)
+  .p-overview
+    &__top
+      &Text
+        display: none
+        &Mobile
+          display: block
+
+        &Large
+          font-size: 1.6rem
+
+    &__strongImg
+      width: 44px
+
+    &__balloon
+      &Top
+        margin-top: 5px
+      &Img
+        width: 250px
+        height: 100%

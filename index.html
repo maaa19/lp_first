@@ -2,8 +2,10 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>コネクリ</title>
     <link rel="stylesheet" href="styles/css/bootstrap.css">
+    <link rel="stylesheet" href="styles/css/bootstrap-grid.css">
     <link rel="stylesheet" href="styles/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/css/style.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
@@ -23,7 +25,7 @@
                 <li class="l-headerPc__menuItem"><a class="l-headerPc__menuLink" href="#">レギュラーワーク</a></li>
                 <li class="l-headerPc__menuItem"><a class="l-headerPc__menuLink" href="#">リクルート</a></li>
                 <li class="l-headerPc__menuItem"><a class="l-headerPc__menuLink" href="#">お問い合わせ</a></li>
-                <li class="l-headerPc__menuItem--download"><a class="l-headerPc__menuLink--download" href="#">ダウンロード</a></li>
+                <li class="c-btn c-btn--headerDownload"><a class="l-headerPc__menuLink--download" href="#">ダウンロード</a></li>
               </ul>
             </div>
           </div>
@@ -55,7 +57,7 @@
       </section>
       <section class="l-bg--overview l-content--sectionMd">
         <div class="l-content">
-          <div class="row justify-content-center align-items-end">
+          <div class="row justify-content-center align-items-center">
             <div class="p-overview__top">
               <img class="p-overview__strongImg" src="images/overview_strong_01.png" alt="">
             </div>
@@ -65,17 +67,23 @@
               <span class="p-overview__topTextLarge">お悩み</span>
               ではございませんか？
             </p>
+            <p class="p-overview__topTextMobile">
+              大学生のみなさん、<br>
+              こんなことで
+              <span class="p-overview__topTextLarge">お悩み</span>
+              では<br>ございませんか？
+            </p>
             <div class="p-overview__strong">
               <img class="p-overview__strongImg" src="images/overview_strong_02.png" alt="">
             </div>
           </div>
           <div class="p-overview__balloon">
             <div class="p-overview__balloonTop row justify-content-between">
-              <img class="p-overview__balloonImg" src="images/overview_balloon_01.png" alt="">
-              <img class="p-overview__balloonImg" src="images/overview_balloon_02.png" alt="">
+              <img class="p-overview__balloonImg col-xs-12" src="images/overview_balloon_01.png" alt="">
+              <img class="p-overview__balloonImg col-xs-12" src="images/overview_balloon_02.png" alt="">
             </div>
             <div class="p-overview__balloonBottom">
-              <img class="p-overview__balloonImg" src="images/overview_balloon_03.png" alt="">
+              <img class="p-overview__balloonImg col-xs-12" src="images/overview_balloon_03.png" alt="">
             </div>
           </div>
           <div class="row justify-content-center align-items-end">
@@ -140,17 +148,19 @@
       </section>
       <section class="row">
         <div class="l-bg l-bg--theme l-bg--left">
-            <div class="p-serviceTop p-serviceTop--left">
-              <div class="p-serviceTop__top">
-                <div class="c-label c-label--service">
-                  <img class="c-labelImg" src="images/spot_label.png" alt="">
+            <div class="p-serviceTop p-serviceTop--right">
+              <div class="p-serviceTop__box p-serviceTop__box--left">
+                <div class="p-serviceTop__top">
+                  <div class="c-label c-label--service">
+                    <img class="c-labelImg" src="images/spot_label.png" alt="">
+                  </div>
+                  <p class="p-serviceTop__outline">学生が企業の依頼に協力したり、<br>提案したり、今までにない<br>新しいワークスタイル</p>
                 </div>
-                <p class="p-serviceTop__outline">学生が企業の依頼に協力したり、<br>提案したり、今までにない<br>新しいワークスタイル</p>
+                <p class="p-serviceTop__detail">企業の依頼に協力して報酬を貰います。<br>例えばSNSで情報拡散、アンケートの協力、イベントの参加など、<br>
+                  さまざまな形で企業と接することができます。<br>学生から企業に対して提案することが出来ますので<br>
+                  学生団体やサークルの仲間で協力して活動費を稼ぐことも出来ます。
+                </p>
               </div>
-              <p class="p-serviceTop__detail">企業の依頼に協力して報酬を貰います。<br>例えばSNSで情報拡散、アンケートの協力、イベントの参加など、<br>
-                さまざまな形で企業と接することができます。<br>学生から企業に対して提案することが出来ますので<br>
-                学生団体やサークルの仲間で協力して活動費を稼ぐことも出来ます。
-              </p>
             </div>
           </div>
         </div>
@@ -214,12 +224,12 @@
               <p class="p-spot__usageUserText"><span class="p-spot__usageUserTextStrong">海外支援団体所属B子さん</span>の場合</p>
               <div class="p-spot__usageFlow row justify-content-between align-items-center">
                 <img class="p-spot__usageFlowFirstImg" src="images/spot_work_02.png" alt="">
-                <p class="p-spot__usageFlowText">『メンズアパレルブランド<br>新商品をSNSで宣伝』に<br>
+                <p class="p-spot__usageFlowText">テキストテキストテキストテキストテキストテキストテキ<br>
                   <span class="p-spot__usageFlowFirstTextLarge">エントリー</span>
                 </p>
                 <i class="p-spot__usageFlowArrow fa fa-caret-right fa-4x" aria-hidden="true"></i>
                 <img class="p-spot__usageFlowSecondImg" src="images/spot_ad.png" alt="">
-                <p class="p-spot__usageFlowText">フォロワー数20,000人の<br>Twitterアカウントで<br>
+                <p class="p-spot__usageFlowText">テキストテキストテキストテキストテキストテキストテキ<br>
                   <span class="p-spot__usageFlowSecondTextLarge">新商品を宣伝</span>
                 </p>
                 <i class="p-spot__usageFlowArrow fa fa-caret-right fa-4x" aria-hidden="true"></i>
@@ -236,7 +246,7 @@
                 </p>
                 <i class="p-spot__usageFlowArrow fa fa-caret-right fa-4x" aria-hidden="true"></i>
                 <img class="p-spot__usageFlowSecondImg" src="images/spot_ad.png" alt="">
-                <p class="p-spot__usageFlowText">フォロワー数20,000人の<br>Twitterアカウントで<br>
+                <p class="p-spot__usageFlowText">フォロワー数20,0000人の<br>Twitterアカウントで<br>
                   <span class="p-spot__usageFlowSecondTextLarge">新商品を宣伝</span>
                 </p>
                 <i class="p-spot__usageFlowArrow fa fa-caret-right fa-4x" aria-hidden="true"></i>
@@ -248,7 +258,7 @@
               <p class="p-spot__usageUserText"><span class="p-spot__usageUserTextStrong">イベントサークル所属D子さん</span>の場合</p>
               <div class="p-spot__usageFlow row justify-content-between align-items-center">
                 <img class="p-spot__usageFlowFirstImg" src="images/spot_work_04.png" alt="">
-                <p class="p-spot__usageFlowText">『メンズアパレルブランド<br>新商品をSNSで宣伝』に<br>
+                <p class="p-spot__usageFlowText">『レディースアパレルブランド<br>新商品をSNSで宣伝』に<br>
                   <span class="p-spot__usageFlowFirstTextLarge">エントリー</span>
                 </p>
                 <i class="p-spot__usageFlowArrow fa fa-caret-right fa-4x" aria-hidden="true"></i>
@@ -265,22 +275,22 @@
       </section>
       <section class="row">
         <div class="l-bg l-bg--regular l-bg--left"></div>
-        <div class="l-bg l-bg--theme l-bg--right">
-          <div class="">
-            <div class="p-serviceTop p-serviceTop--right">
-              <div class="p-serviceTop__top">
-                <div class="c-label c-label--service">
-                  <img class="c-labelImg" src="images/regular_label.png" alt="">
+          <div class="l-bg l-bg--theme l-bg--right">
+            <div class="p-serviceTop p-serviceTop--left">
+              <div class="p-serviceTop__box">
+                <div class="p-serviceTop__top">
+                  <div class="c-label c-label--service">
+                    <img class="c-labelImg" src="images/regular_label.png" alt="">
+                  </div>
+                  <p class="p-serviceTop__outline">学生の間にスキルアップできる<br>インターン・アルバイトを<br>探せる。</p>
                 </div>
-                <p class="p-serviceTop__outline">学生の間にスキルアップできる<br>インターン・アルバイトを<br>探せる。</p>
+                <p class="p-serviceTop__detail">自分の将来の目標に向かってスキルアップができる<br>仕事を掲載しています。<br>
+                  社会人と一緒に仕事をすることで社会人としての<br>基本的なスキルを身につけられます。<br>
+                  レギュラーワークで就職活動に差をつけましょう。<br>
+                </p>
               </div>
-              <p class="p-serviceTop__detail">自分の将来の目標に向かってスキルアップができる<br>仕事を掲載しています。<br>
-                社会人と一緒に仕事をすることで社会人としての<br>基本的なスキルを身につけられます。<br>
-                レギュラーワークで就職活動に差をつけましょう。<br>
-              </p>
             </div>
           </div>
-
         </div>
       </section>
       <section class="l-bg--serviceDetail">
@@ -305,17 +315,19 @@
       </section>
       <section class="row">
         <div class="l-bg l-bg--theme l-bg--left">
-          <div class="p-serviceTop p-serviceTop--left">
-            <div class="p-serviceTop__top">
-              <div class="c-label c-label--service">
-                <img class="c-labelImg" src="images/recruit_label.png" alt="">
+          <div class="p-serviceTop p-serviceTop--right">
+            <div class="p-serviceTop__box p-serviceTop__box--left">
+              <div class="p-serviceTop__top">
+                <div class="c-label c-label--service">
+                  <img class="c-labelImg" src="images/recruit_label.png" alt="">
+                </div>
+                <p class="p-serviceTop__outline">自分にピッタリの職場や仲間を<br>見つけられる。</p>
               </div>
-              <p class="p-serviceTop__outline">自分にピッタリの職場や仲間を<br>見つけられる。</p>
+              <p class="p-serviceTop__detail">“就職”のイメージを一新するカジュアルな交流が<br>できるようになっています。<br>
+                興味のある企業にエントリーして、<br>まずは話を聞いてみましょう。<br>
+                また、あなたを必要としている企業から<br>直接スカウトを受ける事もあります。
+              </p>
             </div>
-            <p class="p-serviceTop__detail">“就職”のイメージを一新するカジュアルな交流が<br>できるようになっています。<br>
-              興味のある企業にエントリーして、<br>まずは話を聞いてみましょう。<br>
-              また、あなたを必要としている企業から<br>直接スカウトを受ける事もあります。
-            </p>
           </div>
         </div>
         <div class="l-bg l-bg--recruit l-bg--right">
