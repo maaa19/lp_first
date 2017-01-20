@@ -1,5 +1,5 @@
 .l-content
-  width: 980px
+  max-width: 980px
   margin: 0 auto
   &--half
     padding: 0 60px
@@ -12,10 +12,16 @@
 .row
   margin: 0
 
+@media (max-width: $breakpointTab)
+  .l-content
+    width: 100%
+    margin: 0 auto
+
 @media (max-width: $breakpointMobile)
   .l-content
-    width: 768px
+    max-width: 768px
     margin: 0 auto
+    padding: 0 20px
     // &--half
     //   padding: 0 60px
 

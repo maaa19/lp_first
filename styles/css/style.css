@@ -57,14 +57,14 @@ body {
 /*-----リンクの設定----- */
 a {
   color: #7c7c7c;
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out; }
   a:hover {
     color: #fff;
-    -webkit-transition: color 0.2s ease-in-out;
-    -moz-transition: color 0.2s ease-in-out;
-    -ms-transition: color 0.2s ease-in-out;
-    -o-transition: color 0.2s ease-in-out;
-    transition: color 0.2s ease-in-out;
     text-decoration: none; }
 
 ul {
@@ -140,7 +140,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     background-repeat: repeat none; }
 
 .l-content {
-  width: 980px;
+  max-width: 980px;
   margin: 0 auto; }
   .l-content--half {
     padding: 0 60px; }
@@ -152,10 +152,15 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 .row {
   margin: 0; }
 
+@media (max-width: 1024px) {
+  .l-content {
+    width: 100%;
+    margin: 0 auto; } }
 @media (max-width: 768px) {
   .l-content {
-    width: 768px;
-    margin: 0 auto; }
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 20px; }
     .l-content--sectionMd {
       padding: 20px 0; }
     .l-content--sectionLarge {
@@ -166,18 +171,28 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   right: 0;
   background-color: #fff;
   z-index: 1; }
-  .l-headerPc {
-    width: 980px; }
-    .l-headerPc__logoImg {
-      width: 110px; }
-    .l-headerPc__menuLink {
-      padding: 20px 0;
-      width: 130px;
-      display: inline-block; }
-      .l-headerPc__menuLink:hover {
-        color: #fff;
-        background-color: #5ed9db; }
+  .l-headerPc__logoImg {
+    width: 110px; }
+  .l-headerPc__menuItem {
+    width: 130px; }
+  .l-headerPc__menuLink {
+    width: 100%;
+    padding: 20px 0;
+    display: inline-block; }
+    .l-headerPc__menuLink:hover {
+      color: #fff;
+      background-color: #5ed9db; }
 
+@media (max-width: 1024px) {
+  .l-headerPc {
+    width: 100%; }
+    .l-headerPc__logo {
+      width: 15%; }
+    .l-headerPc__menu {
+      width: 85%; }
+      .l-headerPc__menuItem {
+        width: 16%;
+        font-size: 1.2rem; } }
 .l-main {
   padding-top: 64px; }
 
@@ -208,6 +223,12 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   .c-btn--headerDownload:hover {
     opacity: 0.7; }
 
+@media (max-width: 1024px) {
+  .c-btn--headerDownload {
+    display: inline-block;
+    padding: 10px 0;
+    width: 18%;
+    font-size: 1.4rem; } }
 .c-label {
   width: 300px; }
   .c-labelImg {

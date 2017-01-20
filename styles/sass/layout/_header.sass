@@ -5,18 +5,34 @@
   background-color: #fff
   z-index: 1
   &Pc
-    width: 980px
+    // width: 980px
     &__logo
       &Img
         width: 110px
     &__menu
       &List
-      &Link
-        padding: 20px 0
+      &Item
         width: 130px
+      &Link
+        width: 100%
+        padding: 20px 0
         display: inline-block
         &:hover
           color: #fff
           background-color: #5ed9db
+
+@media (max-width: $breakpointTab)
+  .l-header
+    &Pc
+      width: 100%
+      &__logo
+        width: 15%
+        &Img
+      &__menu
+        width: 85%
+        &List
+        &Item
+          width: 16%
+          font-size: 1.2rem
 
 @media (max-width: $breakpointMobile)
