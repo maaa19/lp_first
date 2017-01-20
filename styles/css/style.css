@@ -115,7 +115,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     background-repeat: no-repeat; }
   .l-bg--overview, .l-bg--userGroup {
     background-color: #5ed9db; }
-  .l-bg--feature, .l-bg--userStudent {
+  .l-bg--feature, .l-bg--userStudent, .l-bg--footer {
     background-color: #fff; }
   .l-bg--serviceDetail {
     background-color: #f9f8f3; }
@@ -180,26 +180,34 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 .l-main {
   padding-top: 64px; }
 
+.l-footer {
+  color: #ccc; }
+  .l-footer__toTop {
+    border-top: solid 1px #ccc;
+    height: 100px; }
+    .l-footer__toTopBtnImg {
+      width: 81px; }
+  .l-footer__copyright {
+    border-top: solid 1px #ccc; }
+    .l-footer__copyrightText {
+      font-size: 2rem;
+      padding: 50px 0 65px; }
+
 .c-btn--download {
   width: 134px;
   margin-top: 30px; }
 
 .c-label {
-  margin: 0 auto;
   width: 300px;
   height: 50px;
   position: relative; }
   .c-labelImg {
-    width: 100%; }
+    width: 100%;
+    position: absolute; }
   .c-labelText {
     color: #000;
     font-size: 22px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    line-height: 50px; }
+    position: absolute; }
   .c-label--featureText {
     color: #666;
     font-size: 2.6rem; }
@@ -239,13 +247,13 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 
 .p-top__left {
   width: 50%;
-  padding: 130px 0; }
+  padding: 130px 0 140px; }
 .p-top__slogan {
   font-size: 1.6rem;
   color: #7c7c7c; }
 .p-top__logo {
   width: 339px;
-  margin: 18px auto;
+  margin: 20px auto;
   margin-bottom: 0; }
   .p-top__logoImg {
     width: 100%; }
@@ -407,5 +415,11 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   .p-userGroup__list {
     width: 770px;
     margin: 40px auto 0; }
+
+.p-bottom__mobile {
+  width: 270px;
+  margin: 70px 40px 0; }
+  .p-bottom__mobileImg {
+    width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
