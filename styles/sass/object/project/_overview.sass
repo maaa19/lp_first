@@ -12,17 +12,26 @@
         display: none
 
   &__strong
+    width: 120px
     &Img
-      width: 120px
+      width: 100%
 
   &__balloon
     &Top
       margin-top: 40px
+      @include flex
+      @include flexItemsAround
+      @include flexWrap
+
     &Img
       width: 400px
       height: 100%
 
   &__bottom
+    @include flex
+    @include flexItemsCenter
+    @include flexItemsMiddle
+
     &Text
       color: #fff
       font-size: 2.0rem
@@ -39,24 +48,62 @@
     color: $subColor
 
 @media (max-width: $breakpointTab)
-
-@media (max-width: $breakpointMobile)
   .p-overview
     &__top
       &Text
-        display: none
-        &Mobile
-          display: block
-
+        font-size: 2.4rem
         &Large
-          font-size: 1.6rem
+          color: $subColor
+          font-size: 2.8rem
+        &Mobile
+          display: none
 
-    &__strongImg
-      width: 44px
+    &__strong
+      width: 80px
+      &Img
+        margin-top: 10px
 
     &__balloon
-      &Top
-        margin-top: 5px
+      margin-top: 20px
+      flex-direction: column
+      @include flexItemsMiddle
       &Img
-        width: 250px
-        height: 100%
+        margin-top: 10px
+
+    &__bottom
+      margin-top: 20px
+      &Text
+        color: #fff
+        font-size: 2rem
+        padding: 0 23px
+        &Large
+          color: $subColor
+          font-size: 2.8rem
+
+    &__star
+      &Img
+        width: 50px
+
+    &__arrowDown
+      color: $subColor
+
+
+@media (max-width: $breakpointMobile)
+  // .p-overview
+  //   &__top
+  //     &Text
+  //       display: none
+  //       &Mobile
+  //         display: block
+  //
+  //       &Large
+  //         font-size: 1.6rem
+  //
+  //   &__strongImg
+  //     width: 44px
+  //
+  //   &__balloon
+  //     margin-top: 5px
+  //     &Img
+  //       width: 250px
+  //       height: 100%
