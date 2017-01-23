@@ -4,18 +4,20 @@
     &__left
       margin:
         left: 80px
+      width: 500px
       &Text
         font-size: 1.6rem
         margin-top: 60px
         text-align: left
     &__studentsImg
-      width: 500px
+      width: 100%
       margin-top: 25px
     &__right
+      width: 240px
       margin:
         right: 100px
     &__graphImg
-      width: 240px
+      width: 100%
       margin-top: 20px
 
   &Group
@@ -42,4 +44,13 @@
       margin: 40px auto 0
 
 @media (max-width: $breakpointTab)
+  .p-user
+    &Student
+      &__left
+        margin-left: 10%
+        width: 55%
+      &__right
+        width: 25%
+        margin-right: 10%
+
 @media (max-width: $breakpointMobile)

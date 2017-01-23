@@ -9,15 +9,17 @@
 
   &__step
     margin-top: 50px
+    @include flex
+    @include flexItemsBetween
     &Text
       margin-top: 20px
     &Item
-      max-width: 200px
     &Img
-      width: 200px
+      max-width: 200px
     &Num
-      width: 70px
-      margin-top: 40px
+      &Img
+        width: 70px
+        margin-top: 40px
 
   &__usage
     margin: 80px 40px 0
@@ -40,21 +42,20 @@
       margin-top: 10px
       padding-bottom: 20px
       &Text
-        width: 190px
+        width: 25%
       &First
         &Img
-          width: 80px
+          width: 10%
           height: 100%
-          margin-right: 15px
         &TextLarge
           font-size: 1.8rem
           color: $themeColor
           font-weight: bold
       &Second
         &Img
-          width: 75px
+          width: 9%
           height: 100%
-          margin-left: 6px
+          margin-left: 1%
         &TextLarge
           font-size: 1.8rem
           color: $subColor
@@ -66,7 +67,25 @@
         width: 80px
       &Arrow
         color: $subColor
-        padding: 0 15px
+        padding: 0 2%
 
 @media (max-width: $breakpointTab)
+  .p-spot
+    &__step
+      &Item
+        width: 24%
+      &Img
+        width: 100%
+    &__usage
+      &Flow
+        &Text
+          font-size: 1.0rem
+        &First
+          &TextLarge
+            font-size: 1.6rem
+        &Second
+          &TextLarge
+            font-size: 1.6rem
+        &ThirdText
+          font-size: 1.6rem
 @media (max-width: $breakpointMobile)
