@@ -296,7 +296,15 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     width: 100%; }
 .p-top__download {
   width: 300px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
 .p-top__label {
   width: 300px;
   margin: 30px auto 0; }
@@ -444,7 +452,15 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     font-size: 2.8rem; }
 .p-serviceDetail {
   margin: 100px auto 0;
-  width: 770px; }
+  width: 770px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
   .p-serviceDetailImg {
     width: 320px; }
   .p-serviceDetailText {
@@ -556,12 +572,25 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     margin-top: 20px; }
 .p-userGroup {
   padding: 20px 0 50px; }
-  .p-userGroup__topImg {
-    width: 50px; }
-  .p-userGroup__topText {
-    font-size: 2.4rem;
-    color: #fce409;
-    padding: 0 20px; }
+  .p-userGroup__top {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-self: flex-end;
+    -ms-flex-item-align: end;
+    align-self: flex-end; }
+    .p-userGroup__topImg {
+      width: 50px;
+      height: 100%; }
+    .p-userGroup__topText {
+      font-size: 2.4rem;
+      color: #fce409;
+      padding: 0 20px; }
   .p-userGroup__groupInfo {
     margin-top: 35px; }
   .p-userGroup__groupImg {
@@ -573,7 +602,15 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
       font-weight: bold; }
   .p-userGroup__list {
     width: 770px;
-    margin: 40px auto 0; }
+    margin: 40px auto 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
 
 @media (max-width: 1024px) {
   .p-userStudent__left {
