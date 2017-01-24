@@ -2,9 +2,9 @@
   &__title
     @include flex
     @include flexItemsCenter
-  &__itemList
+  &__content
     margin: 30px auto 0px
-    width: 756px
+    max-width: 756px
     @include flex
     @include flexItemsBetween
   &__img
@@ -19,11 +19,40 @@
 
 @media (max-width: $breakpointTab)
   .p-feature
-    &__itemList
+    &__content
       margin: 30px auto 0px
       width: 100%
-      @include flex
+      // @include flex
       @include flexItemsBetween
     &__img
       width: 160px
 @media (max-width: $breakpointMobile)
+  .p-feature
+    &__content
+      display: block
+      padding: 0 25px
+    &__item
+      width: 100%
+      @include flex
+      @include flexItemsBetween
+      @include flexItemsMiddle
+    &__img
+      width: 40%
+      height: 100%
+      min-width: 80px
+
+    &__point
+      margin-top: 30px
+      &Desc
+        // margin-top: 10px
+    &__btnToBottom
+      margin-top: 0
+      // color: $themeColor
+
+
+      // margin: 30px auto 0px
+      // width: 100%
+      // @include flex
+      // @include flexItemsBetween
+    &__img
+      // width: 160px
