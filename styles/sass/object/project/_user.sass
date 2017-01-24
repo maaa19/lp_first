@@ -1,6 +1,12 @@
 .p-user
   &Student
     margin-top: 50px
+    &__title
+      @include flex
+      @include flexItemsCenter
+    &__content
+      @include flex
+      @include flexItemsBetween
     &__left
       margin:
         left: 80px
@@ -19,6 +25,16 @@
         top: 20px
     &__graphImg
       width: 100%
+
+    &Mobile
+      display: none
+      width: 100%
+      margin-top: 20px
+      &__graphImg
+        width: 200px
+      &__leftText
+        display: none
+        text-align: center
 
   &Group
     padding-top: 20px
@@ -69,3 +85,37 @@
         width: 100%
 
 @media (max-width: $breakpointMobile)
+  .p-user
+    &Student
+      &__content
+        flex-direction: column
+        @include flexItemsAround
+      &__left
+        width: 100%
+        margin-left: 0
+        // margin-left: 10%
+        // width: 55%
+        &Text
+          margin-top: 20px
+          display: none
+          // font-size: 1.4rem
+        &studentsImg
+          margin-top: 20px
+      &__right
+        display: none
+        // width: 25%
+        // margin:
+        //   right: 10%
+        //   top: 5%
+      &Mobile
+        display: block
+        &__leftText
+          display: block
+
+    &Group
+      &__top
+        &Text
+          font-size: 1.4rem
+        &Img
+          max-width: 50px
+          width: 8%

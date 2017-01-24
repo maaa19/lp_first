@@ -1,7 +1,7 @@
 .l-bg
   width: 50%
   height: 550px
-  repeat: no-repeat
+  background-repeat: no-repeat
   &--left
     position: relative
     background:
@@ -36,7 +36,7 @@
   &--theme
     background:
       image: url("../../images/theme_bg.png")
-      repeat: repeat none
+      repeat: repeat no-repeat
 
   &--spot
     background:
@@ -57,22 +57,27 @@
       color: #fbfbfb
       image: url("../../images/bottom_bg.png")
       position: center top
-      repeat: repeat none
+      repeat: repeat no-repeat
 
-  &Mobile
-    &--spot
-      display: none
-      background-image: url("../../images/spot_bg_mobile.png")
-
+  &--mobile
+    display: none
 
 
 @media (max-width: $breakpointTab)
 @media (max-width: $breakpointMobile)
   .l-bg
     width: 100%
-    min-width: 320px
-    min-height: 320px
-    background-repeat: no-repeat
+    height: 275px
+    &--mobile
+      display: block
+      width: 100%
+      height: 100%
+    &--spot
+      background-image: none
+
+    &--right
+    // display: none
+    // min-width: 320px
     &--left
       // position: relative
       // background:
@@ -87,12 +92,14 @@
       //   position: center top
 
     &--top
+      background-image: none
+      height: 100%
       // width: 100%
       // height: 540px
       // width: 100%
       // min-height: 320px
-      background:
-        image: url("../../images/top_bg_mobile.jpg")
+      // background:
+      //   image: url("../../images/top_bg_mobile.jpg")
       //   color: #fbfbfb
 
       //   position: center top
@@ -108,32 +115,29 @@
       // background-color: #f9f8f3
 
     &--theme
+      height: 275px
       // background:
         // image: url("../../images/theme_bg.png")
         // repeat: repeat none
 
     &--spot
-      display: none
-      // background:
-      //   image: url("../../images/spot_bg_mobile.jpg")
+      background-image: none
 
     &--regular
+      background-image: none
       // background:
       //   image: url("../../images/regular_bg.jpg")
 
     &--recruit
+      background-image: none
       // background:
       //   image: url("../../images/recruit_bg.jpg")
 
     &--bottom
+      height: 100%
       // width: 100%
       // height: 540px
-      // background:
+      background-repeat: repeat
       //   color: #fbfbfb
       //   image: url("../../images/bottom_bg.png")
       //   position: center top
-      //   repeat: repeat none
-
-    &Mobile
-      &--spot
-        display: block

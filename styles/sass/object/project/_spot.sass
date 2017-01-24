@@ -1,7 +1,7 @@
 .p-spot
   &__about
     &Img
-      width: 250px
+      max-width: 250px
       margin-top: 112px
     &Text
       font-size: 1.6rem
@@ -20,6 +20,10 @@
       &Img
         width: 70px
         margin-top: 40px
+  &Mobile
+    &__aboutText
+      display: none
+      margin-top: 10px
 
   &__usage
     margin: 80px 40px 0
@@ -91,3 +95,28 @@
 @media (max-width: 768px)
 
 @media (max-width: $breakpointMobile)
+  .p-spot
+    &__step
+      flex-direction: column
+      margin-top: 0
+      &Item
+        min-width: 200px
+        width: 100%
+        margin:
+          top: 20px
+          bottom: 10px
+      &Num
+        &Img
+          margin-top: 10px
+      &Text
+        font-size: 1.6rem
+    &__about
+      &Img
+        width: 50%
+        min-width: 150px
+        margin-top: 78px
+      &Text
+        display: none
+    &Mobile
+      &__aboutText
+        display: block

@@ -8,7 +8,7 @@
     font-size: 1.6rem
     color: $textMainColor
   &__logo
-    width: 339px
+    width: 340px
     margin: 20px auto
     margin-bottom: 0
     &Img
@@ -24,7 +24,52 @@
     &Img
       width: 300px
 
+  &Mobile__slogan
+    font-size: 2.0rem
+    display: none
+
 @media (max-width: $breakpointTab)
 @media (max-width: $breakpointMobile)
-  .l-main__left--top
-    display: none
+  .l-main
+
+    &__slogan
+      display: none
+      // font-size: 1.6rem
+      // color: $textMainColor
+    &__logo
+      width: 50%
+      min-width: 200px
+      margin-top: 10px
+      // width: 340px
+      // margin: 20px auto
+      // margin-bottom: 0
+      &Img
+        // width: 100%
+    &__download
+      display: none
+      // width: 300px
+      // margin: 0 auto
+      // @include flex
+      // @include flexItemsBetween
+    &__label
+      margin-top: 10px
+      width: 100%
+      // width: 300px
+      // margin: 30px auto 0
+      &Img
+        width: 50%
+        min-width: 160px
+        // width: 300px
+
+    &__left
+      &--top
+        display: none
+      &--bottom
+        @include flex
+        flex-direction: column
+        @include flexMiddle
+        width: 100%
+        padding: 0
+        margin-top: 30px
+    &Mobile__slogan
+      display: block

@@ -1,19 +1,42 @@
 .p-bottom
   @include flex
   @include flexItemsCenter
-  &__right
+  &__phone
     width: 50%
     max-width: 270px
     margin: 70px 40px 0
     &Img
       width: 100%
+  &Mobile
+    &__phone
+      display: none
+      width: 100%
+      @include flexItemsCenter
 
 @media (max-width: $breakpointTab)
   .p-bottom
     @include flexItemsAround
-    &__right
+    &__phone
       width: 35%
       min-width: 200px
       margin: auto 0
 
 @media (max-width: $breakpointMobile)
+  .p-bottom
+    padding-top: 30px
+    padding-bottom: 30px
+    flex-direction: column
+    // @include flexItemscenter
+    // @include flex
+    // @include flexItemsCenter
+    &__phone
+      display: none
+      // width: 50%
+      // max-width: 270px
+      // margin: 70px 40px 0
+      &Img
+        width: 240px
+        // width: 100%
+    &Mobile
+      &__phone
+        display: block
