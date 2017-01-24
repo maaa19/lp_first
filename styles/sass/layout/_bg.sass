@@ -59,12 +59,20 @@
       position: center top
       repeat: repeat none
 
+  &Mobile
+    &--spot
+      display: none
+      background-image: url("../../images/spot_bg_mobile.png")
+
+
+
 @media (max-width: $breakpointTab)
 @media (max-width: $breakpointMobile)
   .l-bg
-    // width: 50%
-    // height: 550px
-    // repeat: no-repeat
+    width: 100%
+    min-width: 320px
+    min-height: 320px
+    background-repeat: no-repeat
     &--left
       // position: relative
       // background:
@@ -81,8 +89,8 @@
     &--top
       // width: 100%
       // height: 540px
-      width: 100%
-      min-height: 320px
+      // width: 100%
+      // min-height: 320px
       background:
         image: url("../../images/top_bg_mobile.jpg")
       //   color: #fbfbfb
@@ -105,8 +113,9 @@
         // repeat: repeat none
 
     &--spot
+      display: none
       // background:
-      //   image: url("../../images/spot_bg.jpg")
+      //   image: url("../../images/spot_bg_mobile.jpg")
 
     &--regular
       // background:
@@ -124,3 +133,7 @@
       //   image: url("../../images/bottom_bg.png")
       //   position: center top
       //   repeat: repeat none
+
+    &Mobile
+      &--spot
+        display: block
