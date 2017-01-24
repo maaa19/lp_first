@@ -21,16 +21,16 @@
             </div>
             <div class="l-header__menu">
               <ul class="l-header__menuList row justify-content-end align-items-center">
-                <li class="l-header__menuItem">
-                  <a class="l-header__menuLink" href="#">コネクリとは</a>
+                <li class="l-header__menuItem s-scroll_feature">
+                  <a class="l-header__menuLink" href="#section1">コネクリとは</a>
                 </li>
-                <li class="l-header__menuItem">
+                <li class="l-header__menuItem s-scroll_spotwork">
                   <a class="l-header__menuLink" href="#">スポットワーク</a>
                 </li>
-                <li class="l-header__menuItem">
+                <li class="l-header__menuItem s-scroll_regularwork">
                   <a class="l-header__menuLink" href="#">レギュラーワーク</a>
                 </li>
-                <li class="l-header__menuItem">
+                <li class="l-header__menuItem s-scroll_recruit">
                   <a class="l-header__menuLink" href="#">リクルート</a>
                 </li>
                 <li class="l-header__menuItem">
@@ -47,7 +47,7 @@
       </div> -->
     </header>
     <main class="l-main">
-      <section class="l-bg--top">
+      <section class="l-bg--top s-scrollpoint_top">
         <div class="l-content">
           <div class="l-main__left l-main__left--top l-content--half">
             <p class="l-main__slogan">企業とつながる学生専用アプリ</p>
@@ -64,7 +64,7 @@
           </div>
         </div>
       </section>
-      <section class="l-bg--overview l-content--sectionMd">
+      <section class="l-bg--overview l-content--sectionMd s-scrollpoint_feature">
         <div class="l-content">
           <div class="p-overview__top">
             <div class="p-overview__strong">
@@ -119,7 +119,7 @@
                   <h2 class="c-title c-title--md">スポットワーク</h2>
                   <p class="p-feature__pointDesc">企業の依頼に協力をして<br>報酬を貰えます。</p>
                   <div class="p-feature__btnToBottom p-feature__btnToSpot">
-                    <i class="c-btn fa fa-angle-down fa-4x " aria-hidden="true"></i>
+                    <i class="c-btn fa fa-angle-down fa-4x s-scroll_spotwork" aria-hidden="true"></i>
                   </div>
                 </div>
               </div>
@@ -130,7 +130,7 @@
                   <h2 class="c-title c-title--md">レギュラーワーク</h2>
                   <p class="p-feature__pointDesc">インターンシップや<br>アルバイトを探せます。</p>
                   <div class="p-feature__btnToBottom p-feature__btnToRegular">
-                    <i class="c-btn fa fa-angle-down fa-4x" aria-hidden="true"></i>
+                    <i class="c-btn fa fa-angle-down fa-4x s-scroll_regularwork" aria-hidden="true"></i>
                   </div>
                 </div>
                 </div>
@@ -142,7 +142,7 @@
                   <h2 class="c-title c-title--md">リクルート</h2>
                   <p class="p-feature__pointDesc">自分の目指す就職先を<br>探す事ができます</p>
                   <div class="p-feature__btnToBottom p-feature__btnToRecruit">
-                    <i class="c-btn fa fa-angle-down fa-4x" aria-hidden="true"></i>
+                    <i class="c-btn fa fa-angle-down fa-4x s-scroll_recruit" aria-hidden="true"></i>
                   </div>
                 </div>
                 </div>
@@ -151,7 +151,7 @@
           </div>
         </div>
       </section>
-      <section class="row">
+      <section class="row s-scrollpoint_spotwork">
         <div class="l-bg l-bg--theme l-bg--left">
             <div class="p-serviceTop p-serviceTop--right">
               <div class="p-serviceTop__box p-serviceTop__box--left">
@@ -286,7 +286,7 @@
           </div>
         </div>
       </section>
-      <section class="row">
+      <section class="row s-scrollpoint_regularwork">
         <div class="l-bg l-bg--regular l-bg--left"></div>
           <div class="l-bg l-bg--theme l-bg--right">
             <div class="p-serviceTop p-serviceTop--left">
@@ -326,7 +326,7 @@
           </div>
         </div>
       </section>
-      <section class="row">
+      <section class="row s-scrollpoint_recruit">
         <div class="l-bg l-bg--theme l-bg--left">
           <div class="p-serviceTop p-serviceTop--right">
             <div class="p-serviceTop__box p-serviceTop__box--left">
@@ -456,7 +456,7 @@
       <div class="l-footer__toTop row align-items-center">
         <div class="l-content ">
           <div class="l-footer__toTopBtn">
-            <img class="l-footer__toTopBtnImg" src="images/footer_toTop.png" alt="">
+            <img class="l-footer__toTopBtnImg s-scroll_top" src="images/footer_toTop.png" alt="">
           </div>
         </div>
       </div>
@@ -477,5 +477,16 @@
 
       </div>
     </footer>
+    <script src="js/node_modules/jquery/dist/jquery.min.js">
+    </script>
+    <script src="js/conecre.js">
+    </script>
+    <script>
+      moveTarget('.s-scroll_feature', '.s-scrollpoint_feature');
+      moveTarget('.s-scroll_spotwork', '.s-scrollpoint_spotwork');
+      moveTarget('.s-scroll_regularwork', '.s-scrollpoint_regularwork');
+      moveTarget('.s-scroll_recruit', '.s-scrollpoint_recruit');
+      moveTarget('.s-scroll_top', '.s-scrollpoint_top');
+    </script>
   </body>
 </html>
