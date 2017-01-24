@@ -1,8 +1,19 @@
-.p-bottom__mobile
-  width: 270px
-  margin: 70px 40px 0
-  &Img
-    width: 100%
+.p-bottom
+  @include flex
+  @include flexItemsCenter
+  &__right
+    width: 50%
+    max-width: 270px
+    margin: 70px 40px 0
+    &Img
+      width: 100%
 
 @media (max-width: $breakpointTab)
+  .p-bottom
+    @include flexItemsAround
+    &__right
+      width: 35%
+      min-width: 200px
+      margin: auto 0
+
 @media (max-width: $breakpointMobile)

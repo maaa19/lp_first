@@ -43,4 +43,18 @@
       width: 90%
       &__outline
         font-size: 2.4rem
+    &Detail
+      width: 100%
+      @include  flexItemsAround
+      &Point
+        width: 40%
+      &Img
+        width: 100%
+
+@media (max-width: 768px)
+  .p-service
+    &Top
+      &__outline
+        font-size: 1.8rem
+
 @media (max-width: $breakpointMobile)

@@ -1,5 +1,8 @@
 .p-overview
   &__top
+    @include flex
+    @include flexItemsCenter
+    @include flexItemsBottom
     &Text
       color: #fff
       font-size: 3.0rem
@@ -10,6 +13,7 @@
         font-weight: bold
       &Mobile
         display: none
+        color: $textLightColor
 
   &__strong
     width: 120px
@@ -50,58 +54,75 @@
   .p-overview
     &__top
       &Text
-        font-size: 2.4rem
+        font-size: 2.2rem
+        padding: 0 10px
         &Large
-          color: $subColor
           font-size: 2.8rem
-        &Mobile
-          display: none
+        // &Mobile
+        //   display: none
 
     &__strong
-      width: 80px
+      width: 10%
+      min-width: 60px
       &Img
-        margin-top: 10px
+        // margin-top: 10px
 
     &__balloon
-      margin-top: 20px
       &Img
         width: 40%
+        min-width: 250px
         margin-top: 10px
 
     &__bottom
       margin-top: 20px
       &Text
-        color: #fff
-        font-size: 2rem
-        padding: 0 23px
+        // color: #fff
+        // font-size: 2rem
+        padding: 0
         &Large
-          color: $subColor
-          font-size: 2.8rem
+          // color: $subColor
+          // font-size: 2.8rem
 
     &__star
       &Img
-        width: 50px
+        // width: 50px
 
     &__arrowDown
-      color: $subColor
+      // color: $subColor
 
 
 @media (max-width: $breakpointMobile)
-  // .p-overview
-  //   &__top
-  //     &Text
-  //       display: none
-  //       &Mobile
-  //         display: block
-  //
-  //       &Large
-  //         font-size: 1.6rem
-  //
-  //   &__strongImg
-  //     width: 44px
-  //
-  //   &__balloon
-  //     margin-top: 5px
-  //     &Img
-  //       width: 250px
-  //       height: 100%
+  .p-overview
+    &__top
+      @include flexItemsMiddle
+      &Text
+        display: none
+        &Large
+          font-size: 2.0rem
+        &Mobile
+          display: block
+
+    &__strong
+      min-width: 60px
+      &Img
+
+    &__balloon
+      margin-top: 20px
+      flex-direction: column
+      @include flexItemsMiddle
+      &Img
+        width: 50%
+        margin-top: 5px
+    &__bottom
+      margin-top: 0
+      @include flexItemsTop
+      &Text
+        font-size: 1.2rem
+        // padding: 0 23px
+        &Large
+          // color: $subColor
+          font-size: 1.6rem
+    &__star
+      &Img
+        max-width: 50px
+        width: 8%

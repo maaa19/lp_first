@@ -11,64 +11,62 @@
   </head>
   <body>
     <header class="l-header">
-      <div class="">
-        <div class="l-headerPc l-content">
+        <div class="l-content">
           <div class="row justify-content-between align-items-center">
-            <div class="l-headerPc__logo">
-              <img class="l-headerPc__logoImg" src="images/conecre_logo.png" alt="コネクリ">
+            <div class="l-header__logo">
+              <img class="l-header__logoImg" src="images/conecre_logo.png" alt="コネクリ">
             </div>
-            <div class="l-headerPc__menu">
-              <ul class="l-headerPc__menuList row justify-content-end align-items-center">
-                <li class="l-headerPc__menuItem">
-                  <a class="l-headerPc__menuLink" href="#">コネクリとは</a>
+            <div class="l-headerMobile__menuBtn">
+              <img class="l-headerMobile__menuBtnImg" src="images/header_menuBtn.png" alt="">
+            </div>
+            <div class="l-header__menu">
+              <ul class="l-header__menuList row justify-content-end align-items-center">
+                <li class="l-header__menuItem">
+                  <a class="l-header__menuLink" href="#">コネクリとは</a>
                 </li>
-                <li class="l-headerPc__menuItem">
-                  <a class="l-headerPc__menuLink" href="#">スポットワーク</a>
+                <li class="l-header__menuItem">
+                  <a class="l-header__menuLink" href="#">スポットワーク</a>
                 </li>
-                <li class="l-headerPc__menuItem">
-                  <a class="l-headerPc__menuLink" href="#">レギュラーワーク</a>
+                <li class="l-header__menuItem">
+                  <a class="l-header__menuLink" href="#">レギュラーワーク</a>
                 </li>
-                <li class="l-headerPc__menuItem">
-                  <a class="l-headerPc__menuLink" href="#">リクルート</a>
+                <li class="l-header__menuItem">
+                  <a class="l-header__menuLink" href="#">リクルート</a>
                 </li>
-                <li class="l-headerPc__menuItem">
-                  <a class="l-headerPc__menuLink" href="#">お問い合わせ</a>
+                <li class="l-header__menuItem">
+                  <a class="l-header__menuLink" href="#">お問い合わせ</a>
                 </li>
                 <li class="c-btn c-btn--headerDownload">
-                  <a class="l-headerPc__menuLink--download" href="#">ダウンロード</a>
+                  <a class="l-header__menuLink--download" href="#">ダウンロード</a>
                 </li>
               </ul>
             </div>
           </div>
-
         </div>
-      </div>
-
-      <div class="l-headerMobile">
-
-      </div>
+      <!-- <div class="l-headerMobile">
+      </div> -->
     </header>
     <main class="l-main">
       <section class="l-bg--top">
         <div class="l-content">
-          <div class="p-top__left l-content--half">
-            <p class="p-top__slogan">企業とつながる学生専用アプリ</p>
-            <div class="p-top__logo">
-              <img class="p-top__logoImg" src="images/conecre_logo.png" alt="">
+          <div class="l-main__left l-main__left--top l-content--half">
+            <p class="l-main__slogan">企業とつながる学生専用アプリ</p>
+            <div class="l-main__logo">
+              <img class="l-main__logoImg" src="images/conecre_logo.png" alt="">
             </div>
-            <div class="p-top__download">
-                <a class="c-btn--download" href="#"><img src="images/download_googleplay.svg" alt=""></a>
-                <a class="c-btn--download" href="#"><img src="images/download_appstore.svg" alt=""></a>
+            <div class="l-main__download">
+                <a class="c-btn--mainDownload" href="#"><img src="images/download_googleplay.svg" alt=""></a>
+                <a class="c-btn--mainDownload" href="#"><img src="images/download_appstore.svg" alt=""></a>
             </div>
-            <div class="p-top__label">
-              <img class="p-top__labelImg" src="images/label_free.png" alt="">
+            <div class="l-main__label">
+              <img class="l-main__labelImg" src="images/label_free.png" alt="">
             </div>
           </div>
         </div>
       </section>
       <section class="l-bg--overview l-content--sectionMd">
         <div class="l-content">
-          <div class="row justify-content-center align-items-center">
+          <div class="p-overview__top">
             <div class="p-overview__strong">
               <img class="p-overview__strongImg" src="images/overview_strong_01.png" alt="">
             </div>
@@ -78,12 +76,12 @@
               <span class="p-overview__topTextLarge">お悩み</span>
               ではございませんか？
             </p>
-            <!-- <p class="p-overview__topTextMobile">
+            <p class="p-overview__topTextMobile">
               大学生のみなさん、<br>
               こんなことで
               <span class="p-overview__topTextLarge">お悩み</span>
               では<br>ございませんか？
-            </p> -->
+            </p>
             <div class="p-overview__strong">
               <img class="p-overview__strongImg" src="images/overview_strong_02.png" alt="">
             </div>
@@ -109,7 +107,7 @@
       <section class="l-bg--feature">
         <div class="l-content l-content--sectionMd">
           <div class="p-feature">
-            <div class="row justify-content-center">
+            <div class="p-feature__title">
               <div class="c-label">
                 <img class="c-labelImg" src="images/feature_label.png" alt="">
               </div>
@@ -429,42 +427,51 @@
       </section>
       <section class="l-bg--bottom">
         <div class="l-content">
-          <div class="row">
-            <div class="p-top__left l-content--half">
-              <p class="p-top__slogan">企業とつながる学生専用アプリ</p>
-              <div class="p-top__logo">
-                <img class="p-top__logoImg" src="images/conecre_logo.png" alt="">
+          <div class="p-bottom">
+            <div class="l-main__left l-main__left--bottom l-content--half">
+              <p class="l-main__slogan">企業とつながる学生専用アプリ</p>
+              <div class="l-main__logo">
+                <img class="l-main__logoImg" src="images/conecre_logo.png" alt="">
               </div>
-              <div class="p-top__download">
-                  <a class="c-btn--download" href="#"><img src="images/download_googleplay.svg" alt=""></a>
-                  <a class="c-btn--download" href="#"><img src="images/download_appstore.svg" alt=""></a>
+              <div class="l-main__download">
+                  <a class="c-btn--mainDownload" href="#"><img src="images/download_googleplay.svg" alt=""></a>
+                  <a class="c-btn--mainDownload" href="#"><img src="images/download_appstore.svg" alt=""></a>
               </div>
-              <div class="p-top__label">
-                <div class="c-label">
-                  <img class="c-labelImg" src="images/label_free.png" alt="">
-                </div>
+              <div class="l-main__label">
+                <img class="l-main__labelImg" src="images/label_free.png" alt="">
               </div>
             </div>
-            <div class="p-bottom__mobile">
-              <img class="p-bottom__mobileImg" src="images/iphone_conecri.png" alt="">
+            <div class="p-bottom__right">
+              <img class="p-bottom__rightImg" src="images/iphone_conecri.png" alt="">
             </div>
           </div>
         </div>
       </section>
     </main>
     <footer class="l-bg-footer">
-        <div class="l-footer__toTop row align-items-center">
-          <div class="l-content ">
-            <div class="l-footer__toTopBtn">
-              <img class="l-footer__toTopBtnImg" src="images/footer_toTop.png" alt="">
-            </div>
+      <div class="l-footer__toTop row align-items-center">
+        <div class="l-content ">
+          <div class="l-footer__toTopBtn">
+            <img class="l-footer__toTopBtnImg" src="images/footer_toTop.png" alt="">
           </div>
         </div>
-        <div class="l-footer__copyright">
-          <div class="l-content">
-            <p class="l-footer__copyrightText">©2016 identity.INC - ALL RIGHTS RESERVED.</p>
+      </div>
+      <div class="l-footer__copyright">
+        <div class="l-content">
+          <p class="l-footer__copyrightText">©2016 identity.INC - ALL RIGHTS RESERVED.</p>
+        </div>
+      </div>
+      <div class="l-footer__download">
+        <div class="l-content">
+          <p class="l-footer__downloadText">アプリダウンロードはこちらから</p>
+          <div class="l-footer__downloadBtn">
+              <a class="c-btn--footerDownload" href="#"><img src="images/download_googleplay.svg" alt=""></a>
+              <a class="c-btn--footerDownload" href="#"><img src="images/download_appstore.svg" alt=""></a>
           </div>
         </div>
+
+
+      </div>
     </footer>
   </body>
 </html>
