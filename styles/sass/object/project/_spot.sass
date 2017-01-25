@@ -13,7 +13,6 @@
     @include flexItemsBetween
     &Text
       margin-top: 20px
-    &Item
     &Img
       max-width: 200px
     &Num
@@ -44,6 +43,9 @@
       border-bottom: dotted
       margin-top: 10px
       padding-bottom: 20px
+      @include flex
+      @include flexItemsBetween
+      @include flexItemsMiddle
       &Text
         width: 25%
       &First
@@ -76,17 +78,29 @@
     &__aboutText
       display: none
       margin-top: 10px
-    &__usageUser
-      display: none
-      margin-top: 10px
-      &List
-        @include flex
-        @include flexItemsBetween
-      &Img
-        width: 60px
-        // min-width: 245px
-      &Item
-        // width: 60px
+    &__usage
+      &User
+        display: none
+        margin-top: 10px
+        width: 100%
+        max-width: 400px
+        &List
+          width: 100%
+          // max-width: 400px
+          @include flex
+          @include flexItemsBetween
+        &Img
+          width: 60px
+      &Flow
+        &ThirdText
+          display: none
+          color: #ff5353
+          font-weight: bold
+          font-size: 1.8rem
+          width: 100%
+        &Arrow
+          display: none
+          color: $subColor
 
 @media (max-width: $breakpointTab)
   .p-spot
@@ -112,15 +126,65 @@
 @media (max-width: 768px)
   .p-spot
     &__usage
-      &UserImg
+      border: none
+      background-color: transparent
+      margin: 40px 0px 0px
+      &User
         display: none
-        margin-top: 0
-        width: 60px
-    &Mobile
-      &__usageUser
-        display: block
-        &List
+        &Text
+          font-size: 1.6rem
+          margin-top: 0
+      &Ex
+        padding: 20px
+        margin-top: 10px
+        width: 70%
+        min-width: 280px
+        display: inline-block
+      &Flow
+        border: none
+        flex-direction: column
+        margin: 0
+        padding: 0
+        &First
+          &Img
+            margin-top: 20px
+            width: 70px
+          &TextLarge
+            font-size: 1.8rem
+        &Second
+          &Img
+            width: 60px
+          &TextLarge
+            font-size: 1.8rem
+        &Text
+          margin-top: 10px
+          font-size: 1.4rem
+          width: 100%
+        &ThirdText
+          display: none
+        &Arrow
+          display: none
 
+    &Mobile
+      &__usage
+        &User
+          display: inline-block
+          // width: 70%
+        &Flow
+          &ThirdText
+            display: block
+          &Arrow
+            display: block
+
+        &Ex
+          &01
+            border: solid 4px #0c70a2
+          &02
+            border: solid 4px #ba355e
+          &03
+            border: solid 4px #217d71
+          &04
+            border: solid 4px #e49023
 
 @media (max-width: $breakpointMobile)
   .p-spot
@@ -136,8 +200,7 @@
       &Num
         &Img
           margin-top: 10px
-      &Text
-        font-size: 1.6rem
+
     &__about
       &Img
         width: 50%
@@ -145,12 +208,6 @@
         margin-top: 78px
       &Text
         display: none
-    &__usage
-      &Ex
-        border: solid 4px blue
-        padding: 20px 20px 40px
-      &Flow
-
 
     &Mobile
       &__aboutText

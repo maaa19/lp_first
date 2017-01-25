@@ -188,7 +188,8 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   .l-content {
     width: 100%;
     margin: 0 auto;
-    padding: 0; }
+    padding-left: 20px;
+    padding-right: 20px; }
     .l-content--sectionMd {
       padding-top: 20px;
       padding-bottom: 20px; }
@@ -412,15 +413,22 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   .c-label--userStudent {
     width: 420px; }
 
+@media (max-width: 768px) {
+  .c-label--spotUsage {
+    width: 100%; }
+    .c-label--spotUsageImg {
+      position: relative;
+      width: 70%;
+      min-width: 250px;
+      top: 0; } }
 @media (max-width: 600px) {
   .c-label {
     width: 180px; }
     .c-label--service {
       width: 25%;
       min-width: 85px; }
-    .c-label--spotUsageImg {
-      width: 50%;
-      min-width: 250px; }
+    .c-label--spotUsage {
+      width: 100%; }
     .c-label--userStudent {
       width: 250px; } }
 .c-title--md {
@@ -780,7 +788,19 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   .p-spot__usageFlow {
     border-bottom: dotted;
     margin-top: 10px;
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
     .p-spot__usageFlowText {
       width: 25%; }
     .p-spot__usageFlowFirstImg {
@@ -811,8 +831,11 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   margin-top: 10px; }
 .p-spotMobile__usageUser {
   display: none;
-  margin-top: 10px; }
+  margin-top: 10px;
+  width: 100%;
+  max-width: 400px; }
   .p-spotMobile__usageUserList {
+    width: 100%;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -823,6 +846,15 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     justify-content: space-between; }
   .p-spotMobile__usageUserImg {
     width: 60px; }
+.p-spotMobile__usageFlowThirdText {
+  display: none;
+  color: #ff5353;
+  font-weight: bold;
+  font-size: 1.8rem;
+  width: 100%; }
+.p-spotMobile__usageFlowArrow {
+  display: none;
+  color: #fce409; }
 
 @media (max-width: 1024px) {
   .p-spot__stepItem {
@@ -840,12 +872,57 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   .p-spot__usageUserImg {
     margin-top: 0; } }
 @media (max-width: 768px) {
-  .p-spot__usageUserImg {
-    display: none;
-    margin-top: 0;
-    width: 60px; }
+  .p-spot__usage {
+    border: none;
+    background-color: transparent;
+    margin: 40px 0px 0px; }
+    .p-spot__usageUser {
+      display: none; }
+      .p-spot__usageUserText {
+        font-size: 1.6rem;
+        margin-top: 0; }
+    .p-spot__usageEx {
+      padding: 20px;
+      margin-top: 10px;
+      width: 70%;
+      min-width: 280px;
+      display: inline-block; }
+    .p-spot__usageFlow {
+      border: none;
+      flex-direction: column;
+      margin: 0;
+      padding: 0; }
+      .p-spot__usageFlowFirstImg {
+        margin-top: 20px;
+        width: 70px; }
+      .p-spot__usageFlowFirstTextLarge {
+        font-size: 1.8rem; }
+      .p-spot__usageFlowSecondImg {
+        width: 60px; }
+      .p-spot__usageFlowSecondTextLarge {
+        font-size: 1.8rem; }
+      .p-spot__usageFlowText {
+        margin-top: 10px;
+        font-size: 1.4rem;
+        width: 100%; }
+      .p-spot__usageFlowThirdText {
+        display: none; }
+      .p-spot__usageFlowArrow {
+        display: none; }
   .p-spotMobile__usageUser {
-    display: block; } }
+    display: inline-block; }
+  .p-spotMobile__usageFlowThirdText {
+    display: block; }
+  .p-spotMobile__usageFlowArrow {
+    display: block; }
+  .p-spotMobile__usageEx01 {
+    border: solid 4px #0c70a2; }
+  .p-spotMobile__usageEx02 {
+    border: solid 4px #ba355e; }
+  .p-spotMobile__usageEx03 {
+    border: solid 4px #217d71; }
+  .p-spotMobile__usageEx04 {
+    border: solid 4px #e49023; } }
 @media (max-width: 600px) {
   .p-spot__step {
     flex-direction: column;
@@ -857,17 +934,12 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
       margin-bottom: 10px; }
     .p-spot__stepNumImg {
       margin-top: 10px; }
-    .p-spot__stepText {
-      font-size: 1.6rem; }
   .p-spot__aboutImg {
     width: 50%;
     min-width: 150px;
     margin-top: 78px; }
   .p-spot__aboutText {
     display: none; }
-  .p-spot__usageEx {
-    border: solid 4px blue;
-    padding: 20px 20px 40px; }
   .p-spotMobile__aboutText {
     display: block; } }
 .p-userStudent {
