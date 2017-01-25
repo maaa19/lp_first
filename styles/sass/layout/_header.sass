@@ -9,7 +9,6 @@
     &Img
       width: 100%
   &__menu
-    // &List
     &Item
       width: 130px
     &Link
@@ -37,15 +36,18 @@
       margin: 20px 0 20px 20px
     &__menu
       display: none
-      border-top: 6px solid #59d8da
-      border-bottom: 6px solid #59d8da
+      border-top: 6px solid $bgThemeColor
+      border-bottom: 6px solid $bgThemeColor
       width: 100%
-      // &List
       &Link
         font-size: 2rem
         padding: 25px 0
         &--download
+          display: block
+          padding: 25px 0
           color: $subColor
+          &:hover
+            background-color: $subColor
 
       &Item
         width: 100%
@@ -57,5 +59,3 @@
       position: absolute
       top: 0
       right: 0
-
-@media (max-width: $breakpointMobile)

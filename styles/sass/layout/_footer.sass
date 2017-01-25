@@ -12,6 +12,7 @@
       font-size: 2.0rem
       padding: 50px 0 65px
   &__download
+    display: none
     padding-top: 15px
     padding-bottom: 15px
     position: fixed
@@ -22,9 +23,9 @@
     &Text
       font-size: 1.6rem
     &Btn
-      display: none
-      margin-top: 10px
+      margin: 10px auto 0px
       width: 100%
+      max-width: 400px
       @include flex
       @include flexItemsAround
 
@@ -45,3 +46,5 @@
       &Text
         font-size: 1.2rem
         padding: 15px 0 20px
+    &__download
+      // display: block

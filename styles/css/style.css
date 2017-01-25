@@ -235,14 +235,18 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
       margin: 20px 0 20px 20px; }
     .l-header__menu {
       display: none;
-      border-top: 6px solid #59d8da;
-      border-bottom: 6px solid #59d8da;
+      border-top: 6px solid #5ed9db;
+      border-bottom: 6px solid #5ed9db;
       width: 100%; }
       .l-header__menuLink {
         font-size: 2rem;
         padding: 25px 0; }
         .l-header__menuLink--download {
+          display: block;
+          padding: 25px 0;
           color: #fce409; }
+          .l-header__menuLink--download:hover {
+            background-color: #fce409; }
       .l-header__menuItem {
         width: 100%;
         border-bottom: 2px solid #5ed9db;
@@ -345,6 +349,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
       font-size: 2rem;
       padding: 50px 0 65px; }
   .l-footer__download {
+    display: none;
     padding-top: 15px;
     padding-bottom: 15px;
     position: fixed;
@@ -355,9 +360,9 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     .l-footer__downloadText {
       font-size: 1.6rem; }
     .l-footer__downloadBtn {
-      display: none;
-      margin-top: 10px;
+      margin: 10px auto 0px;
       width: 100%;
+      max-width: 400px;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -394,12 +399,13 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 
 @media (max-width: 1024px) {
   .c-btn--headerDownload {
-    display: inline-block;
-    padding: 25px 0;
+    padding: 0;
     width: 100%;
     font-size: 2rem;
     background: #fff;
-    border-radius: 0px; } }
+    border-radius: 0px; }
+    .c-btn--headerDownload:hover {
+      opacity: 1; } }
 .c-label {
   width: 300px; }
   .c-labelImg {
