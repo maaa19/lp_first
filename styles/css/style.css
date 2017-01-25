@@ -809,8 +809,20 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 .p-spotMobile__aboutText {
   display: none;
   margin-top: 10px; }
-.p-spotMobile__usageUserList {
-  display: none; }
+.p-spotMobile__usageUser {
+  display: none;
+  margin-top: 10px; }
+  .p-spotMobile__usageUserList {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .p-spotMobile__usageUserImg {
+    width: 60px; }
 
 @media (max-width: 1024px) {
   .p-spot__stepItem {
@@ -832,15 +844,8 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     display: none;
     margin-top: 0;
     width: 60px; }
-  .p-spotMobile__usageUserList {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between; } }
+  .p-spotMobile__usageUser {
+    display: block; } }
 @media (max-width: 600px) {
   .p-spot__step {
     flex-direction: column;
@@ -860,6 +865,9 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     margin-top: 78px; }
   .p-spot__aboutText {
     display: none; }
+  .p-spot__usageEx {
+    border: solid 4px blue;
+    padding: 20px 20px 40px; }
   .p-spotMobile__aboutText {
     display: block; } }
 .p-userStudent {

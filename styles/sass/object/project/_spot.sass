@@ -77,8 +77,13 @@
       display: none
       margin-top: 10px
     &__usageUser
+      display: none
+      margin-top: 10px
       &List
-        display: none
+        @include flex
+        @include flexItemsBetween
+      &Img
+        width: 60px
         // min-width: 245px
       &Item
         // width: 60px
@@ -113,9 +118,9 @@
         width: 60px
     &Mobile
       &__usageUser
+        display: block
         &List
-          @include flex
-          @include flexItemsBetween
+
 
 @media (max-width: $breakpointMobile)
   .p-spot
@@ -140,6 +145,12 @@
         margin-top: 78px
       &Text
         display: none
+    &__usage
+      &Ex
+        border: solid 4px blue
+        padding: 20px 20px 40px
+      &Flow
+
 
     &Mobile
       &__aboutText
