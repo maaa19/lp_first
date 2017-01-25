@@ -236,13 +236,17 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     .l-header__menu {
       display: none;
       border-top: 6px solid #59d8da;
-      border-bottom: 6px solid #59d8da; }
+      border-bottom: 6px solid #59d8da;
+      width: 100%; }
       .l-header__menuLink {
         font-size: 2rem;
         padding: 25px 0; }
+        .l-header__menuLink--download {
+          color: #fce409; }
       .l-header__menuItem {
         width: 100%;
-        border-bottom: 2px solid #5ed9db; }
+        border-bottom: 2px solid #5ed9db;
+        background-color: #fff; }
     .l-headerMobile__menuBtn {
       display: block;
       position: absolute;
@@ -394,9 +398,8 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     padding: 25px 0;
     width: 100%;
     font-size: 2rem;
-    background: none; }
-    .c-btn--headerDownload a {
-      color: #fce409; } }
+    background: #fff;
+    border-radius: 0px; } }
 .c-label {
   width: 300px; }
   .c-labelImg {
@@ -453,10 +456,11 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     background-color: #f9f8f3;
     position: absolute;
     top: -18%;
-    left: 16%;
+    left: 0;
+    right: 0;
+    margin: 0 40px;
     font-weight: normal;
-    color: #666;
-    padding: 0 10px; }
+    color: #666; }
 
 @media (max-width: 1024px) {
   .c-title--serviceDetail {
@@ -465,8 +469,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     width: 220px; }
     .c-title--serviceDetailOver {
       font-size: 1.2rem;
-      padding: 0 5px;
-      left: 4%; } }
+      margin: 0 6%; } }
 @media (max-width: 600px) {
   .c-title--md {
     font-size: 1.6rem; } }
@@ -1104,8 +1107,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     max-width: 270px;
     margin: 70px 40px 0; }
     .p-bottom__phoneImg {
-      width: 100%;
-      margin-right: 33%; }
+      width: 100%; }
   .p-bottomMobile__phone {
     display: none;
     width: 100%;
