@@ -188,8 +188,8 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   .l-content {
     width: 100%;
     margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px; }
+    padding: 0;
+    background: #FFF; }
     .l-content--sectionMd {
       padding-top: 20px;
       padding-bottom: 20px; }
@@ -232,9 +232,17 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     height: 70px; }
     .l-header__logo {
       height: 30px;
-      margin: 20px 0; }
+      margin: 20px 0 20px 20px; }
     .l-header__menu {
-      display: none; }
+      display: none;
+      border-top: 6px solid #59d8da;
+      border-bottom: 6px solid #59d8da; }
+      .l-header__menuLink {
+        font-size: 2rem;
+        padding: 25px 0; }
+      .l-header__menuItem {
+        width: 100%;
+        border-bottom: 2px solid #5ed9db; }
     .l-headerMobile__menuBtn {
       display: block;
       position: absolute;
@@ -370,9 +378,12 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 @media (max-width: 1024px) {
   .c-btn--headerDownload {
     display: inline-block;
-    padding: 10px 0;
-    width: 18%;
-    font-size: 1.4rem; } }
+    padding: 25px 0;
+    width: 100%;
+    font-size: 2rem;
+    background: none; }
+    .c-btn--headerDownload a {
+      color: #fce409; } }
 .c-label {
   width: 300px; }
   .c-labelImg {
