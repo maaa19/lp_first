@@ -16,7 +16,7 @@
             <div class="l-header__logo">
               <img class="l-header__logoImg" src="images/conecre_logo.png" alt="コネクリ">
             </div>
-            <div class="l-headerMobile__menuBtn">
+            <div class="l-headerMobile__menuBtn s-headerMobile__menuBtn">
               <img class="l-headerMobile__menuBtnImg" src="images/header_menuBtn.png" alt="">
             </div>
             <div class="l-header__menu">
@@ -487,6 +487,12 @@
       moveTarget('.s-scroll_regularwork', '.s-scrollpoint_regularwork');
       moveTarget('.s-scroll_recruit', '.s-scrollpoint_recruit');
       moveTarget('.s-scroll_top', '.s-scrollpoint_top');
+
+      $('.s-headerMobile__menuBtn').on('click', function(){
+        $('.l-header__menu').slideToggle(function(e){
+          console.log(e);
+        });
+      });
     </script>
   </body>
 </html>
