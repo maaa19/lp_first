@@ -487,12 +487,13 @@
       moveTarget('.s-scroll_regularwork', '.s-scrollpoint_regularwork');
       moveTarget('.s-scroll_recruit', '.s-scrollpoint_recruit');
       moveTarget('.s-scroll_top', '.s-scrollpoint_top');
-
       $('.s-headerMobile__menuBtn').on('click', function(){
-        $('.l-header__menu').slideToggle(function(e){
-          console.log(e);
-        });
+        replaceMenuBtn();
       });
+      hideMobileMenu('.s-scroll_feature');
+      hideMobileMenu('.s-scroll_spotwork');
+      hideMobileMenu('.s-scroll_regularwork');
+      hideMobileMenu('.s-scroll_recruit');
     </script>
   </body>
 </html>
