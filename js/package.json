@@ -11,5 +11,8 @@
     "url": "conecre_lp"
   },
   "author": "inomata",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "cbslideheader": "^0.3.8"
+  }
 }
