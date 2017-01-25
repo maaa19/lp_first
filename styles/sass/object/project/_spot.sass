@@ -20,10 +20,7 @@
       &Img
         width: 70px
         margin-top: 40px
-  &Mobile
-    &__aboutText
-      display: none
-      margin-top: 10px
+
 
   &__usage
     margin: 80px 40px 0
@@ -32,9 +29,11 @@
     background-color: #fff
     position: relative
     &User
+      width: 70px
+      margin-top: 20px
+      display: inline-block
       &Img
-        width: 70px
-        margin-top: 20px
+        width: 100%
       &Text
         font-size: 1.8rem
         margin-top: 10px
@@ -73,6 +72,17 @@
         color: $subColor
         padding: 0 2%
 
+  &Mobile
+    &__aboutText
+      display: none
+      margin-top: 10px
+    &__usageUser
+      &List
+        display: none
+        // min-width: 245px
+      &Item
+        // width: 60px
+
 @media (max-width: $breakpointTab)
   .p-spot
     &__step
@@ -92,7 +102,20 @@
             font-size: 1.6rem
         &ThirdText
           font-size: 1.6rem
+      &UserImg
+        margin-top: 0
 @media (max-width: 768px)
+  .p-spot
+    &__usage
+      &UserImg
+        display: none
+        margin-top: 0
+        width: 60px
+    &Mobile
+      &__usageUser
+        &List
+          @include flex
+          @include flexItemsBetween
 
 @media (max-width: $breakpointMobile)
   .p-spot
@@ -117,6 +140,7 @@
         margin-top: 78px
       &Text
         display: none
+
     &Mobile
       &__aboutText
         display: block
