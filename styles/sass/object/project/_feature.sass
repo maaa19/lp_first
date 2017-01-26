@@ -2,17 +2,22 @@
   &__title
     @include flex
     @include flexItemsCenter
+
   &__content
     margin: 30px auto 0px
     max-width: 756px
     @include flex
     @include flexItemsBetween
+
   &__img
     max-width: 160px
+
   &__point
     margin-top: 50px
+
     &Desc
       margin-top: 10px
+
   &__btnToBottom
     margin-top: 20px
     color: $themeColor
@@ -22,20 +27,22 @@
     &__content
       margin: 30px auto 0px
       width: 100%
-      // @include flex
-      // @include flexItemsBetween
+
     &__img
       width: 160px
+
 @media (max-width: $breakpointMobile)
   .p-feature
     &__content
       display: block
       padding: 0 25px
+
     &__item
       width: 100%
       @include flex
       @include flexItemsAround
       @include flexItemsMiddle
+
     &__img
       width: 40%
       height: 100%
@@ -43,16 +50,6 @@
 
     &__point
       margin-top: 30px
-      &Desc
-        // margin-top: 10px
+
     &__btnToBottom
       margin-top: 0
-      // color: $themeColor
-
-
-      // margin: 30px auto 0px
-      // width: 100%
-      // @include flex
-      // @include flexItemsBetween
-    &__img
-      // width: 160px
