@@ -66,6 +66,9 @@ a {
   a:hover {
     color: #fff;
     text-decoration: none; }
+  a:active, a:focus {
+    text-decoration: none;
+    color: #7c7c7c; }
 
 ul {
   list-style: none; }
@@ -457,8 +460,9 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   content: url(../../images/userGroup_arrow_next.png); }
 
 .slick-prev, .slick-next {
-  width: 15px;
-  top: 35%;
+  width: 34px;
+  height: 62px;
+  top: 50%;
   z-index: 10; }
 
 .slick-prev {
@@ -727,7 +731,8 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
       right: 0; }
   .p-serviceTop__outline {
     margin-top: 30px;
-    font-size: 2.8rem; }
+    font-size: 2.8rem;
+    font-weight: bold; }
 .p-serviceDetail {
   margin: 100px auto 0;
   width: 770px;
@@ -816,7 +821,9 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   -ms-flex-pack: justify;
   justify-content: space-between; }
   .p-spot__stepText {
-    margin-top: 20px; }
+    margin-top: 20px;
+    font-size: 1.6rem;
+    font-weight: bold; }
   .p-spot__stepImg {
     max-width: 200px; }
   .p-spot__stepNumImg {
