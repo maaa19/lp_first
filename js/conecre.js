@@ -31,25 +31,44 @@ function replaceMenuBtn(){
 
 function scrollMobileTopMenu(target){
   var startPos = 0;
+  var f = !0;
   $(window).scroll(function(){
     var currentPos = $(this).scrollTop();
     if (currentPos > startPos) {
-      target.slideDown('fast');
+      f && (f = !1,
+        target.slideDown(300,function(){
+          f = !0
+        })
+      );
     } else {
-      target.slideUp('fast');
+      f && (f = !1,
+        target.slideUp(300, function(){
+        f = !0;
+        })
+      );
     }
     startPos = currentPos;
+
   });
 }
 
 function scrollMobileFooterMenu(target){
   var startPos = 0;
+  var f = !0;
   $(window).scroll(function(){
     var currentPos = $(this).scrollTop();
     if (currentPos > startPos) {
-      target.slideUp('fast');
+      f && (f = !1,
+        target.slideUp('fast',function(){
+          f = !0;
+        })
+      );
     } else {
-      target.slideDown('fast');
+      f && (f = !1,
+      target.slideDown('fast',function(){
+        f = !0;
+      })
+    );
     }
     startPos = currentPos;
   });
@@ -63,6 +82,10 @@ $(function () {
   scrollMobileFooterMenu($headerMenu);
 
 });
+
+
+
+
 
 
 $(function() {
