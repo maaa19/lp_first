@@ -205,6 +205,9 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   right: 0;
   background-color: #fff;
   z-index: 1; }
+  .l-header__content {
+    width: 980px;
+    margin: 0 auto; }
   .l-header__logo {
     width: 110px; }
     .l-header__logoImg {
@@ -230,6 +233,8 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 @media (max-width: 1024px) {
   .l-header {
     height: 70px; }
+    .l-header__content {
+      width: 100%; }
     .l-header__logo {
       height: 30px;
       margin: 20px 0 20px 20px; }
@@ -271,7 +276,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     .l-main__logoImg {
       width: 100%; }
   .l-main__download {
-    width: 300px;
+    width: 280px;
     margin: 30px auto 0;
     display: -webkit-box;
     display: -webkit-flex;
@@ -440,6 +445,28 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
       width: 100%; }
     .c-label--userStudent {
       width: 250px; } }
+.slick-dots li.slick-active button:before {
+  color: #0cb4b7; }
+
+.slick-prev:before {
+  content: url(../../images/userGroup_arrow_prev.png); }
+
+.slick-next:before {
+  content: url(../../images/userGroup_arrow_next.png); }
+
+.slick-prev, .slick-next {
+  width: 18px;
+  top: 30%; }
+
+.slick-prev {
+  left: 0px; }
+
+.slick-next {
+  right: 10px; }
+
+.slick-initialized .slick-slide {
+  display: flex; }
+
 .c-title--md {
   font-size: 2.4rem;
   font-weight: bold;
@@ -577,7 +604,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
       .p-overview__topTextMobile {
         display: block; }
   .p-overview__strong {
-    min-width: 60px; }
+    min-width: 58px; }
   .p-overview__balloon {
     margin-top: 20px;
     flex-direction: column;
@@ -752,7 +779,9 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
       width: 200px; }
     .p-serviceDetailText {
       font-size: 1.4rem;
-      margin-top: 10px; } }
+      margin-top: 10px; }
+  .p-serviceRegular {
+    flex-direction: column-reverse; } }
 .p-spot__aboutImg {
   max-width: 250px;
   margin-top: 112px; }
@@ -882,6 +911,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     margin-top: 0; } }
 @media (max-width: 768px) {
   .p-spot__usage {
+    padding: 0;
     border: none;
     background-color: transparent;
     margin: 40px 0px 0px; }
@@ -1072,33 +1102,22 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     display: block; }
     .p-userStudentMobile__leftText {
       display: block; }
-  .p-userGroup {
-    padding-bottom: 20px; }
-    .p-userGroup__topText {
-      font-size: 1.4rem; }
-    .p-userGroup__topImg {
-      max-width: 50px;
-      width: 8%; }
-    .p-userGroup__list {
-      margin-top: 30px;
-      display: block; }
-    .p-userGroup__group {
-      width: 100%;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-      -ms-flex-align: center;
-      align-items: center; }
-      .p-userGroup__groupInfo {
-        width: 30%;
-        margin-top: 0; } }
+  .p-userGroup__group {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .p-userGroup__groupInfo {
+      margin-top: 0;
+      margin-left: 5%; } }
 .p-bottom {
   display: -webkit-box;
   display: -webkit-flex;

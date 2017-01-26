@@ -63,3 +63,40 @@ $(function () {
   scrollMobileFooterMenu($headerMenu);
 
 });
+
+
+$(function() {
+      $('.p-userGroup__list').slick({
+        // accessibility: true,
+        // autoplay: false,
+        // infinite: true,
+        // dots:true,
+        // slidesToShow: 3,
+        // slidesToScroll: 1,
+
+        responsive: [{
+          breakpoint: 600,
+          settings: {
+            accessibility: true,
+            autoplay: false,
+            slidesToShow: 1,
+            // centerMode: true,
+            // centerPadding: '5%',
+            arrows: true,
+          }
+        },
+
+        // {
+        //   breakpoint: 640,
+        //   settings: {
+        //     accessibility: true,
+        //     autoplay: false,
+        //     slidesToShow: 1,
+        //     centerMode: true,
+        //     centerPadding: '5%',
+        //     arrows: false,
+        //   }
+        //   }
+        ]
+      });
+    });
