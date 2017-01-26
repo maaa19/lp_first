@@ -245,10 +245,10 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
       width: 100%; }
       .l-header__menuLink {
         font-size: 2rem;
-        padding: 25px 0; }
+        padding: 15px 0; }
         .l-header__menuLink--download {
           display: block;
-          padding: 25px 0;
+          padding: 15px 0;
           color: #fce409; }
           .l-header__menuLink--download:hover {
             background-color: #fce409; }
@@ -739,7 +739,8 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   .p-serviceDetailText {
     margin-top: 30px; }
 .p-serviceMobileTop__detail {
-  display: none; }
+  display: none;
+  text-align: justify; }
 
 @media (max-width: 1024px) {
   .p-serviceTop {
@@ -1120,6 +1121,11 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     display: block; }
     .p-userStudentMobile__leftText {
       display: block; }
+  .p-userGroup__topText {
+    font-size: 1.4rem; }
+  .p-userGroup__topImg {
+    max-width: 50px;
+    width: 8%; }
   .p-userGroup__group {
     display: -webkit-box;
     display: -webkit-flex;
