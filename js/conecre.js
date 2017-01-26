@@ -1,19 +1,3 @@
-$(function(){
-        var $downloadbtn = $('.s-header__downloadbtn');
-        var ioslink = 'https://itunes.apple.com/jp/app/konekuri/id1182866848?mt=8';
-        var androidlink = 'https://play.google.com/store/apps/details?id=jp.identity.conecre';
-        var agent = navigator.userAgent;
-        if(agent.search(/iPhone/) != -1){
-          $downloadbtn.attr('href', ioslink);
-        }else if(agent.search(/iPad/) != -1){
-          $downloadbtn.attr('href', ioslink);
-        }else if(agent.search(/Android/) != -1){
-          $downloadbtn.attr('href', 'https://play.google.com/store/apps/details?id=jp.identity.conecre');
-        }else{
-          $downloadbtn.attr('href', 'https://itunes.apple.com/jp/app/konekuri/id1182866848?mt=8');
-        }
-     });
-
 var $heaerHeight = $('.l-header').height();
 var $menuImg = $('.l-headerMobile__menuBtnImg');
 
@@ -91,13 +75,6 @@ function scrollMobileFooterMenu(target){
 }
 
 
-$(function () {
-  var $footerDownload = $(".l-footer__download");
-  var $headerMenu = $(".l-header");
-  scrollMobileTopMenu($footerDownload);
-  //scrollMobileFooterMenu($headerMenu);
-
-});
 
 function chengeCalursel(){
   var $selectImage = $('.s-spotMobile__usageUserImg');

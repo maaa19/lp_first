@@ -51,8 +51,8 @@
                 <li class="l-header__menuItem">
                   <a class="l-header__menuLink" href="https://id-entity.jp/contact/index.html">お問い合わせ</a>
                 </li>
-                <li class="c-btn c-btn--headerDownload s-header__downloadbtn">
-                  <a class="l-header__menuLink--download" href="#">ダウンロード</a>
+                <li class="c-btn c-btn--headerDownload">
+                  <a class="l-header__menuLink--download s-header__downloadbtn" href="">ダウンロード</a>
                 </li>
               </ul>
             </div>
@@ -317,7 +317,7 @@
                   <img class="p-spot__usageUserImg" src="images/spot_student_04.png" alt="">
                 </div>
                 <p class="p-spot__usageUserText"><span class="p-spot__usageUserTextStrong">イベントサークル所属D子さん</span>の場合</p>
-                <div class="p-spot__usageFlow">
+                <div class="p-spot__usageFlow p-spot__usageFlow--last">
                   <img class="p-spot__usageFlowFirstImg" src="images/spot_work_03.png" alt="">
                   <p class="p-spot__usageFlowText">『メンズアパレルブランド<br>新商品をSNSで宣伝』に<br>
                     <span class="p-spot__usageFlowFirstTextLarge">エントリー</span>
@@ -568,6 +568,22 @@
       hideMobileMenu('.s-scroll_regularwork');
       hideMobileMenu('.s-scroll_recruit');
       chengeCalursel();
+
+      $(function(){
+        var $downloadbtn = $('.s-header__downloadbtn');
+        var ioslink = 'https://itunes.apple.com/jp/app/konekuri/id1182866848?mt=8';
+        var androidlink = 'https://play.google.com/store/apps/details?id=jp.identity.conecre';
+        var agent = navigator.userAgent;
+        if(agent.search(/iPhone/) != -1){
+          $downloadbtn.attr('href', ioslink);
+        }else if(agent.search(/iPad/) != -1){
+          $downloadbtn.attr('href', ioslink);
+        }else if(agent.search(/Android/) != -1){
+          $downloadbtn.attr('href', 'https://play.google.com/store/apps/details?id=jp.identity.conecre');
+        }else{
+          $downloadbtn.attr('href', 'https://itunes.apple.com/jp/app/konekuri/id1182866848?mt=8');
+        }
+      });
     </script>
   </body>
 </html>
