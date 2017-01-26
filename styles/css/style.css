@@ -52,8 +52,7 @@ body {
   background-color: #fff;
   font-size: 1.4rem;
   word-wrap: break-word;
-  font-family: "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-  letter-spacing: 0.1rem; }
+  font-family: "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; }
 
 /*-----リンクの設定----- */
 a {
@@ -737,7 +736,8 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   .p-serviceDetailText {
     margin-top: 30px; }
 .p-serviceMobileTop__detail {
-  display: none; }
+  display: none;
+  text-align: justify; }
 
 @media (max-width: 1024px) {
   .p-serviceTop {
