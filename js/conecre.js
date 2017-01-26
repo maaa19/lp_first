@@ -132,6 +132,38 @@ function chengeCalursel(){
   });
 }
 
+$(function(){
+  var $selectImage = $('.s-spotMobile__usageUserImg');
+  var selectedImageActiveFirst = 'p-spotMobile__usageUserImgActiveFirst';
+  var selectedImageActiveSecond = 'p-spotMobile__usageUserImgActiveSecond';
+  var selectedImageActiveThird = 'p-spotMobile__usageUserImgActiveThird';
+  var selectedImageActiveFourth = 'p-spotMobile__usageUserImgActiveFourth';
+  $('.s-spotMobile__list').on('swipe',function(e, slick, direction){
+    var currentSlide = slick.currentSlide;
+    $selectImage.removeClass(selectedImageActiveFirst);
+    $selectImage.removeClass(selectedImageActiveSecond);
+    $selectImage.removeClass(selectedImageActiveThird);
+    $selectImage.removeClass(selectedImageActiveFourth);
+    switch (currentSlide) {
+      case 0:
+        $('#1').addClass(selectedImageActiveFirst);
+        break;
+      case 1:
+        $('#2').addClass(selectedImageActiveSecond);
+        break;
+      case 2:
+        $('#3').addClass(selectedImageActiveThird);
+        break;
+      case 3:
+        $('#4').addClass(selectedImageActiveFourth);
+        break;
+      default:
+        $('#1').addClass(selectedImageActiveFirst);
+    }
+    $selectImage.addClass('p-spotMobile__usageUserImgActive');
+  });
+})
+
 var slicks = $('.s-spotMobile__list').slick({
   arrows: false,
   mobileFirst: true,
@@ -143,17 +175,30 @@ var slicks = $('.s-spotMobile__list').slick({
   ]
 });
 
-$(function(){
-  $('.s-userGroup__list').slick({
-    mobileFirst: true,
-    responsive: [
-      {
-        breakpoint:1024,
-        settings: "unslick"
-      },{
-      breakpoint:600,
+var userslick = $('.s-userGroup__list').slick({
+  mobileFirst: true,
+  responsive: [
+    {
+      breakpoint:1024,
       settings: "unslick"
-    }
-    ]
-  });
+    },{
+    breakpoint:600,
+    settings: "unslick"
+  }
+  ]
 });
+
+// $(function(){
+//   $('.s-userGroup__list').slick({
+//     mobileFirst: true,
+//     responsive: [
+//       {
+//         breakpoint:1024,
+//         settings: "unslick"
+//       },{
+//       breakpoint:600,
+//       settings: "unslick"
+//     }
+//     ]
+//   });
+// });
