@@ -25,7 +25,6 @@
     @include flex
     @include flexItemsAround
     @include flexWrap
-
     &Img
       width: 400px
       height: 100%
@@ -34,7 +33,6 @@
     @include flex
     @include flexItemsCenter
     @include flexItemsMiddle
-
     &Text
       color: #fff
       font-size: 2.0rem
@@ -58,14 +56,10 @@
         padding: 0 10px
         &Large
           font-size: 2.8rem
-        // &Mobile
-        //   display: none
 
     &__strong
       width: 10%
       min-width: 60px
-      &Img
-        // margin-top: 10px
 
     &__balloon
       &Img
@@ -76,20 +70,7 @@
     &__bottom
       margin-top: 20px
       &Text
-        // color: #fff
-        // font-size: 2rem
         padding: 0
-        &Large
-          // color: $subColor
-          // font-size: 2.8rem
-
-    &__star
-      &Img
-        // width: 50px
-
-    &__arrowDown
-      // color: $subColor
-
 
 @media (max-width: $breakpointMobile)
   .p-overview
@@ -107,20 +88,21 @@
       &Img
 
     &__balloon
+      height: 60%
       margin-top: 20px
-      flex-direction: column
+      // flex-direction: column
       @include flexItemsMiddle
       &Img
-        width: 50%
+        display: block
+        width: 60%
         margin-top: 5px
+        height: 100%
     &__bottom
       margin-top: 0
       @include flexItemsTop
       &Text
         font-size: 1.2rem
-        // padding: 0 23px
         &Large
-          // color: $subColor
           font-size: 1.6rem
     &__star
       &Img
