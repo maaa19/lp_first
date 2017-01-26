@@ -83,43 +83,58 @@ $(function () {
 
 });
 
+function chengeCalursel(){
+  var $selectImage = $('.s-spotMobile__usageUserImg');
+  var selectedImageActiveFirst = 'p-spotMobile__usageUserImgActiveFirst';
+  var selectedImageActiveSecond = 'p-spotMobile__usageUserImgActiveSecond';
+  var selectedImageActiveThird = 'p-spotMobile__usageUserImgActiveThird';
+  var selectedImageActiveFourth = 'p-spotMobile__usageUserImgActiveFourth';
+  $selectImage.on('click',function(e){
+    $selectImage.removeClass(selectedImageActiveFirst);
+    $selectImage.removeClass(selectedImageActiveSecond);
+    $selectImage.removeClass(selectedImageActiveThird);
+    $selectImage.removeClass(selectedImageActiveFourth);
+    slideIndex = this.id;
+    slicks.slick('slickGoTo', parseInt(slideIndex) - 1 );
+    switch (this.id){
+      case '1':
+        $(this).addClass(selectedImageActiveFirst);
+        break;
+      case '2':
+        $(this).addClass(selectedImageActiveSecond);
+        break;
+      case '3':
+        $(this).addClass(selectedImageActiveThird);
+        break;
+      case '4':
+        $(this).addClass(selectedImageActiveFourth);
+        break;
+      default:
+        $(this).addClass(selectedImageActiveFirst);
+    }
+    $(this).addClass('p-spotMobile__usageUserImgActive');
+  });
+}
 
+var slicks = $('.s-spotMobile__list').slick({
+  arrows: false,
+  mobileFirst: true,
+  responsive: [
+    {
+      breakpoint:1024,
+      settings: "unslick"
+    }
+  ]
+});
 
-
-
-
-$(function() {
-      $('.p-userGroup__list').slick({
-        // accessibility: true,
-        // autoplay: false,
-        // infinite: true,
-        // dots:true,
-        // slidesToShow: 3,
-        // slidesToScroll: 1,
-
-        responsive: [{
-          breakpoint: 600,
-          settings: {
-            accessibility: true,
-            autoplay: false,
-            slidesToShow: 1,
-            // centerMode: true,
-            // centerPadding: '5%',
-            arrows: true,
-          }
-        },
-
-        // {
-        //   breakpoint: 640,
-        //   settings: {
-        //     accessibility: true,
-        //     autoplay: false,
-        //     slidesToShow: 1,
-        //     centerMode: true,
-        //     centerPadding: '5%',
-        //     arrows: false,
-        //   }
-        //   }
-        ]
-      });
-    });
+$(function(){
+  $('.s-userGroup__list').slick({
+    mobileFirst: true,
+    responsive: [
+      {
+        breakpoint:1024,
+        settings: "unslick"
+      }
+    ]
+  });
+});
