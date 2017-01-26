@@ -456,7 +456,8 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 
 .slick-prev, .slick-next {
   width: 15px;
-  top: 35%; }
+  top: 35%;
+  z-index: 10; }
 
 .slick-prev {
   left: 0px; }

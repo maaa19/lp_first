@@ -95,7 +95,7 @@ $(function () {
   var $footerDownload = $(".l-footer__download");
   var $headerMenu = $(".l-header");
   scrollMobileTopMenu($footerDownload);
-  scrollMobileFooterMenu($headerMenu);
+  //scrollMobileFooterMenu($headerMenu);
 
 });
 
