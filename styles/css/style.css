@@ -204,7 +204,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   left: 0;
   right: 0;
   background-color: #fff;
-  z-index: 1; }
+  z-index: 11; }
   .l-header__content {
     width: 980px;
     margin: 0 auto; }
