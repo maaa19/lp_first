@@ -245,10 +245,10 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
       width: 100%; }
       .l-header__menuLink {
         font-size: 2rem;
-        padding: 15px 0; }
+        padding: 10px 0; }
         .l-header__menuLink--download {
           display: block;
-          padding: 15px 0;
+          padding: 10px 0;
           color: #fce409; }
           .l-header__menuLink--download:hover {
             background-color: #fce409; }
@@ -355,8 +355,8 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
       padding: 50px 0 65px; }
   .l-footer__download {
     display: none;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     position: fixed;
     bottom: 0;
     left: 0;
