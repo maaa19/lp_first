@@ -455,8 +455,8 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   content: url(../../images/userGroup_arrow_next.png); }
 
 .slick-prev, .slick-next {
-  width: 18px;
-  top: 30%; }
+  width: 15px;
+  top: 35%; }
 
 .slick-prev {
   left: 0px; }
@@ -763,6 +763,10 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     font-size: 1.8rem; }
   .p-serviceTop__detail {
     display: none; }
+  .p-serviceTop--left {
+    left: 5%; }
+  .p-serviceTop--right {
+    right: 5%; }
   .p-serviceMobileTop__detail {
     display: block; } }
 @media (max-width: 600px) {
@@ -1142,6 +1146,8 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center; }
+    .p-userGroup__groupImg {
+      width: 100px; }
     .p-userGroup__groupInfo {
       margin-top: 0;
       margin-left: 5%; } }
