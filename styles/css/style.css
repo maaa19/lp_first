@@ -120,7 +120,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     background-position: center top;
     background-repeat: no-repeat; }
   .l-bg--overview, .l-bg--userGroup {
-    background-color: #5ed9db; }
+    background-color: #58cdcd; }
   .l-bg--feature, .l-bg--userStudent, .l-bg--footer {
     background-color: #fff; }
   .l-bg--serviceDetail {
@@ -946,7 +946,8 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
       margin-top: 10px;
       width: 70%;
       min-width: 280px;
-      display: inline-block; }
+      display: inline-block;
+      background-color: #fff; }
     .p-spot__usageFlow {
       border: none;
       flex-direction: column;
@@ -1175,7 +1176,8 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     .p-bottom__phone {
       width: 35%;
       min-width: 200px;
-      margin: auto 0; } }
+      margin: auto 0;
+      margin-right: 5%; } }
 @media (max-width: 600px) {
   .p-bottom {
     padding-top: 30px;
