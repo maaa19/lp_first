@@ -52,7 +52,8 @@ body {
   background-color: #fff;
   font-size: 1.4rem;
   word-wrap: break-word;
-  font-family: "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; }
+  font-family: "Noto Sans JP", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  letter-spacing: 0.1rem; }
 
 /*-----リンクの設定----- */
 a {
@@ -245,10 +246,10 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
       width: 100%; }
       .l-header__menuLink {
         font-size: 2rem;
-        padding: 25px 0; }
+        padding: 15px 0; }
         .l-header__menuLink--download {
           display: block;
-          padding: 25px 0;
+          padding: 15px 0;
           color: #fce409; }
           .l-header__menuLink--download:hover {
             background-color: #fce409; }
@@ -1102,6 +1103,11 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     display: block; }
     .p-userStudentMobile__leftText {
       display: block; }
+  .p-userGroup__topText {
+    font-size: 1.4rem; }
+  .p-userGroup__topImg {
+    max-width: 50px;
+    width: 8%; }
   .p-userGroup__group {
     display: -webkit-box;
     display: -webkit-flex;
