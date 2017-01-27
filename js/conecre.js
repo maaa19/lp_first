@@ -59,13 +59,13 @@ function scrollMobileFooterMenu(target){
     var currentPos = $(this).scrollTop();
     if (currentPos > startPos) {
       f && (f = !1,
-        target.slideUp('fast',function(){
+        target.slideDown('fast',function(){
           f = !0;
         })
       );
     } else {
       f && (f = !1,
-      target.slideDown('fast',function(){
+      target.slideUp('fast',function(){
         f = !0;
       })
     );
