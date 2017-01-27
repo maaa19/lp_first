@@ -151,31 +151,17 @@ var slicks = $('.s-spotMobile__list').slick({
     }
   ]
 });
-
-var userslick = $('.s-userGroup__list').slick({
-  mobileFirst: true,
-  responsive: [
-    {
-      breakpoint:1024,
+$(function(){
+  $('.s-userGroup__list').slick({
+    mobileFirst: true,
+    responsive: [
+      {
+        breakpoint:1024,
+        settings: "unslick"
+      },{
+      breakpoint:600,
       settings: "unslick"
-    },{
-    breakpoint:600,
-    settings: "unslick"
-  }
-  ]
+    }
+    ]
+  });
 });
-
-// $(function(){
-//   $('.s-userGroup__list').slick({
-//     mobileFirst: true,
-//     responsive: [
-//       {
-//         breakpoint:1024,
-//         settings: "unslick"
-//       },{
-//       breakpoint:600,
-//       settings: "unslick"
-//     }
-//     ]
-//   });
-// });

@@ -350,7 +350,10 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     border-top: solid 1px #ccc;
     height: 100px; }
     .l-footer__toTopBtnImg {
+      cursor: pointer;
       width: 80px; }
+      .l-footer__toTopBtnImg:hover {
+        opacity: 0.7; }
   .l-footer__copyright {
     border-top: solid 1px #ccc; }
     .l-footer__copyrightText {
@@ -394,6 +397,8 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     font-size: 1.2rem; } }
 .c-btn--mainDownload {
   width: 135px; }
+  .c-btn--mainDownload:hover {
+    opacity: 0.7; }
 .c-btn--headerDownload {
   display: inline-block;
   padding: 10px 0;
@@ -649,6 +654,10 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center; }
+.p-feature__item {
+  cursor: pointer; }
+  .p-feature__item:hover {
+    opacity: 0.7; }
 .p-feature__content {
   margin: 30px auto 0px;
   max-width: 756px;
