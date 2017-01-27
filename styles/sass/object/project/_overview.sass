@@ -23,7 +23,7 @@
   &__balloon
     margin-top: 40px
     @include flex
-    @include flexItemsAround
+    @include flexItemsBetween
     @include flexWrap
     &Img
       width: 400px
@@ -90,6 +90,7 @@
     &__balloon
       height: 60%
       margin-top: 20px
+      @include flexItemsAround
       // flex-direction: column
       @include flexItemsMiddle
       &Img
@@ -97,6 +98,10 @@
         width: 60%
         margin-top: 5px
         height: 100%
+      &Mobile
+        @include flex
+        @include flexItemsAround
+
     &__bottom
       margin-top: 0
       @include flexItemsTop
