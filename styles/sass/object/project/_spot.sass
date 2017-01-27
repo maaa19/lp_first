@@ -2,7 +2,7 @@
   &__about
     &Img
       max-width: 250px
-      margin-top: 112px
+      margin-top: 114px
     &Text
       font-size: 1.6rem
       margin-top: 20px
@@ -13,7 +13,8 @@
     @include flexItemsBetween
     &Text
       margin-top: 20px
-
+      font-size: 1.4rem
+      font-weight: bold
     &Img
       max-width: 200px
     &Num
@@ -49,6 +50,7 @@
       &--last
         &:last-child
           border-bottom: none
+          padding-bottom: 0
       &Text
         width: 25%
       &First
@@ -126,6 +128,8 @@
         width: 22%
       &Img
         width: 100%
+      &Text
+        margin-top: 10px
 
     &__usage
       &Flow
@@ -189,6 +193,7 @@
     &Mobile
       &__usage
         &User
+          padding: 0 36px
           display: inline-block
         &Flow
           &ThirdText
@@ -231,3 +236,6 @@
     &Mobile
       &__aboutText
         display: block
+      &__usage
+        &User
+          padding: 0 36px

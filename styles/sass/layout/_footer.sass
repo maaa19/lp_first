@@ -1,7 +1,7 @@
 .l-footer
   color: #ccc
   &__toTop
-    border-top: solid 1px #ccc
+    border-top: solid 2px #ccc
     height: 100px
     &Btn
       &Img
@@ -11,7 +11,7 @@
           opacity: 0.7
 
   &__copyright
-    border-top: solid 1px #ccc
+    border-top: solid 2px #ccc
     &Text
       font-size: 2.0rem
       padding: 50px 0 65px
@@ -37,17 +37,20 @@
 @media (max-width: $breakpointTab)
   .l-footer
     &__download
+      z-index: 12
       display: block
 
 @media (max-width: $breakpointMobile)
   .l-footer
     &__toTop
+      border-top: solid 1px #ccc
       height: 50px
       &Btn
         &Img
           width: 40px
 
     &__copyright
+      border-top: solid 1px #ccc
       &Text
         font-size: 1.2rem
         padding: 15px 0 100px

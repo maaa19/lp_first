@@ -22,12 +22,9 @@
 
   &__balloon
     margin-top: 40px
-    &Top
-      @include flex
-      @include flexItemsBetween
-    &Bottom
-      @include flex
-      @include flexItemsCenter
+    @include flex
+    @include flexItemsBetween
+    @include flexWrap
     &Img
       width: 400px
       height: 100%
@@ -99,17 +96,19 @@
       &Img
 
     &__balloon
-      padding: 0 15px
-      margin-top: 5px
-      &Top
-        width: 100%
-        display: block
-      &Bottom
-        width: 100%
+      height: 60%
+      margin-top: 20px
+      @include flexItemsAround
+      // flex-direction: column
+      @include flexItemsMiddle
       &Img
         display: block
         width: 100%
         margin-top: 5px
+        height: 100%
+      &Mobile
+        @include flex
+        @include flexItemsAround
 
     &__bottom
       margin-top: 0
