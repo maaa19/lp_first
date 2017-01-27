@@ -86,6 +86,27 @@
         max-width: 770px
         width: 100%
 
+@media (max-width: 768px)
+  .p-user
+    &Group
+      padding-top: 20px
+      padding-bottom: 20px
+      &__top
+        &Text
+          font-size: 1.4rem
+        &Img
+          max-width: 50px
+          width: 8%
+      &__group
+        @include flex
+        @include flexItemsCenter
+        @include flexItemsMiddle
+        &Img
+          width: 80px
+        &Info
+          margin-top: 0
+          margin-left: 5%
+
 @media (max-width: $breakpointMobile)
   .p-user
     &Student
@@ -107,21 +128,21 @@
         &__leftText
           display: block
 
-    &Group
-      padding-top: 20px
-      padding-bottom: 20px
-      &__top
-        &Text
-          font-size: 1.4rem
-        &Img
-          max-width: 50px
-          width: 8%
-      &__group
-        @include flex
-        @include flexItemsCenter
-        @include flexItemsMiddle
-        &Img
-          width: 80px
-        &Info
-          margin-top: 0
-          margin-left: 5%
+    // &Group
+    //   padding-top: 20px
+    //   padding-bottom: 20px
+    //   &__top
+    //     &Text
+    //       font-size: 1.4rem
+    //     &Img
+    //       max-width: 50px
+    //       width: 8%
+    //   &__group
+    //     @include flex
+    //     @include flexItemsCenter
+    //     @include flexItemsMiddle
+    //     &Img
+    //       width: 80px
+    //     &Info
+    //       margin-top: 0
+    //       margin-left: 5%

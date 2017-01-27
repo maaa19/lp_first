@@ -159,7 +159,7 @@ $(function(){
         breakpoint:1024,
         settings: "unslick"
       },{
-      breakpoint:600,
+      breakpoint:768,
       settings: "unslick"
     }
     ]
