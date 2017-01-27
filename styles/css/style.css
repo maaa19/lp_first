@@ -500,8 +500,8 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   font-weight: bold;
   color: #0cb4b7;
   border: solid 2px;
-  padding: 15px 0;
-  width: 315px;
+  padding: 20px 0;
+  width: 320px;
   position: absolute;
   left: 0;
   right: 0;
@@ -522,7 +522,8 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   .c-title--serviceDetail {
     font-size: 1.6rem;
     border: solid 1px;
-    width: 220px; }
+    width: 220px;
+    padding: 12px 0; }
     .c-title--serviceDetailOver {
       font-size: 1.2rem;
       margin: 0 6%; } }
