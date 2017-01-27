@@ -538,7 +538,7 @@
           <p class="l-footer__copyrightText">©2016 identity.INC - ALL RIGHTS RESERVED.</p>
         </div>
       </div>
-      <div class="l-footer__download">
+      <div class="l-footer__download s-footer__download">
         <div class="l-content">
           <p class="l-footer__downloadText">アプリダウンロードはこちらから</p>
           <div class="l-footer__downloadBtn">
@@ -584,6 +584,9 @@
           $downloadbtn.attr('href', 'https://itunes.apple.com/jp/app/konekuri/id1182866848?mt=8');
         }
       });
+      if ($(window).width() < 1024) {
+        scrollMobileFooterMenu($('.s-footer__download'));
+      }
     </script>
   </body>
 </html>
