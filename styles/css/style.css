@@ -381,6 +381,8 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
       justify-content: space-around; }
 
 @media (max-width: 1024px) {
+  .l-footer__copyrightText {
+    padding: 50px 0 85px; }
   .l-footer__download {
     z-index: 12;
     display: block; } }
@@ -934,7 +936,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
       margin-left: 1%; }
     .p-spot__usageFlowSecondTextLarge {
       font-size: 1.8rem;
-      color: #fce409;
+      color: #fec02a;
       font-weight: bold; }
     .p-spot__usageFlowThirdText {
       color: #ff5353;
