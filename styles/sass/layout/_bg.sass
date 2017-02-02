@@ -21,6 +21,10 @@
       image: url("../../images/top_bg.jpg")
       position: center top
       repeat: no-repeat
+    overflow: hidden
+    &Video
+      width: 100%
+      position: relative
 
   &--overview, &--userGroup
     background-color: #58cdcd
@@ -60,6 +64,10 @@
   &--mobile
     display: none
 
+@media (max-width: $breakpointTab)
+  .l-bg--top
+    &Video
+      display: none
 @media (max-width: $breakpointMobile)
   .l-bg
     width: 100%
