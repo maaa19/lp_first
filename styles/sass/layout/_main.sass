@@ -1,8 +1,11 @@
 .l-main
-  padding-top: 70px
+  padding-top: 60px
   &__left
-    width: 50%
+    width: 490px
     padding: 130px 0 140px
+    &--top
+      position: absolute
+      top: 5%
 
   &__slogan
     font-size: 1.6rem
@@ -34,6 +37,7 @@
 @media (max-width: $breakpointTab)
   .l-main
     &__left
+      width: 50%
       @include flex
       flex-direction: column
       @include flexItemsMiddle

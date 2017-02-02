@@ -26,9 +26,9 @@
     <link rel="stylesheet" href="styles/css/style.css">
   </head>
   <body>
-    <header class="l-header ">
+    <header class="l-header">
       <div class="l-header__content">
-          <div class="row justify-content-between align-items-center">
+          <div class="l-header__contentItem">
             <div class="l-header__logo">
               <h1><a href="#"><img class="l-header__logoImg" src="images/conecre_logo.png" alt="コネクリ"></a></h1>
             </div>
@@ -36,7 +36,7 @@
               <img class="l-headerMobile__menuBtnImg" src="images/header_menuBtn.png" alt="メニューボタン">
             </div>
             <div class="l-header__menu">
-              <ul class="l-header__menuList row justify-content-end align-items-center">
+              <ul class="l-header__menuList">
                 <li class="l-header__menuItem s-scroll_feature">
                   <a class="l-header__menuLink" href="#section1">コネクリとは</a>
                 </li>
@@ -61,21 +61,21 @@
       </div>
     </header>
     <main class="l-main">
-      <section class="l-bg--top s-scrollpoint_top">
+      <section class="p-jumbotron s-scrollpoint_top">
+        <div class="u-content">
+        <!-- 動画に差し変える時は<video>をアンコメントにする -->
+        <!-- <video class="l-bg--topVideo" src="https://d1sa3dvptzf97e.cloudfront.net/free/material/ITRP.mp4" autoplay loop></video> -->
         <img class="l-bg--mobile" src="images/top_bg_mobile.jpg" alt="企業とつながる大学生専用アプリ">
-        <div class="l-content">
-          <div class="l-main__left l-main__left--top l-content--half">
-            <p class="l-main__slogan">企業とつながる大学生専用アプリ</p>
-            <div class="l-main__logo">
-              <img class="l-main__logoImg" src="images/conecre_logo.png" alt="コネクリ">
+          <div class="p-jumbotron__appLink">
+            <div class="p-jumbotron__appLinkItem">
+              <img class="p-jumbotron__appLinkImg" src="images/jumbotron.png" alt="" width="340">
             </div>
-            <div class="l-main__download">
-                <a class="c-btn--mainDownload" href="https://play.google.com/store/apps/details?id=jp.identity.conecre&hl=ja"><img src="images/download_googleplay.svg" alt="Google playダウンロードボタン"></a>
-                <a class="c-btn--mainDownload" href="https://itunes.apple.com/us/app/konekuri/id1182866848?l=ja&ls=1&mt=8"><img src="images/download_appstore.svg" alt="App Storeダウンロードボタン"></a>
-            </div>
-            <div class="l-main__label">
-              <img class="l-main__labelImg" src="images/label_free.png" alt="完全無料">
-            </div>
+            <a class="p-jumbotron__appLinkAndroid" href="https://play.google.com/store/apps/details?id=jp.identity.conecre&hl=ja">
+              <img src="images/download_googleplay.svg" alt="Google playダウンロードボタン" width="135">
+            </a>
+            <a class="p-jumbotron__appLinkIphone" href="https://itunes.apple.com/us/app/konekuri/id1182866848?l=ja&ls=1&mt=8">
+              <img src="images/download_appstore.svg" alt="App Storeダウンロードボタン">
+            </a>
           </div>
         </div>
       </section>
