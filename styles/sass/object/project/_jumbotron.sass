@@ -10,13 +10,10 @@
   position: relative
   &__appLink
     width: 490px
-    // padding: 130px 0 140px
     position: absolute
-    // top: 5%
     &Item
       position: relative
     &Img
-      // width: 340px
       position: relative
       top: 130px
     &Android
@@ -24,24 +21,25 @@
       width: 135px
       position: absolute
       top: 280px
-      left: 100px
+      left: 95px
     &Iphone
       display: block
       width: 135px
       position: absolute
       top: 280px
-      left: 255px
-        // &__slogan
-  //   font-size: 1.6rem
-  //   color: $textMainColor
-  // &__logo
-  //   width: 340px
-  //   margin: 20px auto
-  //   margin-bottom: 0
-  //   &Img
-  //     width: 100%
+      left: 260px
+
   &__download
     width: 280px
     margin: 30px auto 0
     @include flex
     @include flexItemsBetween
+
+@media (max-width: $breakpointTab)
+  .p-jumbotron
+    &__appLink
+      width: 60%
+      &Android
+        right: 53%
+      &Iphone
+        left: 54%
