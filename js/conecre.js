@@ -148,7 +148,10 @@ var slicks = $('.s-spotMobile__list').slick({
     {
       breakpoint:1024,
       settings: "unslick"
-    }
+    },{
+    breakpoint:768,
+    settings: "unslick"
+  }
   ]
 });
 $(function(){

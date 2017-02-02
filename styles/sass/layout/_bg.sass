@@ -65,9 +65,12 @@
     display: none
 
 @media (max-width: $breakpointTab)
-  .l-bg--top
-    &Video
-      display: none
+  .l-bg
+    &--top
+      &Video
+        display: none
+    &--bottom
+      height: 100%
 @media (max-width: $breakpointMobile)
   .l-bg
     width: 100%
