@@ -576,24 +576,25 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   position: relative; }
   .p-jumbotron__appLink {
     width: 490px;
-    position: absolute; }
+    position: relative;
+    top: 130px;
+    margin: 0 75px; }
     .p-jumbotron__appLinkItem {
-      position: relative; }
+      width: 340px; }
     .p-jumbotron__appLinkImg {
-      position: relative;
-      top: 130px; }
+      width: 100%; }
     .p-jumbotron__appLinkAndroid {
       display: block;
       width: 135px;
       position: absolute;
-      top: 280px;
-      left: 95px; }
+      top: 150px;
+      left: 20px; }
     .p-jumbotron__appLinkIphone {
       display: block;
       width: 135px;
       position: absolute;
-      top: 280px;
-      left: 260px; }
+      top: 150px;
+      left: 185px; }
   .p-jumbotron__download {
     width: 280px;
     margin: 30px auto 0;
@@ -608,11 +609,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 
 @media (max-width: 1024px) {
   .p-jumbotron__appLink {
-    width: 60%; }
-    .p-jumbotron__appLinkAndroid {
-      right: 53%; }
-    .p-jumbotron__appLinkIphone {
-      left: 54%; } }
+    width: 60%; } }
 .p-overview__top {
   display: -webkit-box;
   display: -webkit-flex;
