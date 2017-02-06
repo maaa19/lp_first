@@ -1165,7 +1165,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
       font-weight: bold; }
   .p-userGroup__list {
     width: 770px;
-    margin: 40px auto 0;
+    margin: 35px auto 0;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1197,6 +1197,8 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     .p-userGroup__topImg {
       max-width: 50px;
       width: 8%; }
+    .p-userGroup__list {
+      margin-top: 25px; }
     .p-userGroup__group {
       display: -webkit-box;
       display: -webkit-flex;
